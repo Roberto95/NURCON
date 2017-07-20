@@ -72,6 +72,9 @@
     <EmbeddedResource Include="Formulario Nurcon\Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formulario Nurcon\Pacientes.resx">
+      <DependentUpon>Pacientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -80,6 +83,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="bin\Debug\WindowsApp.exe.config" />
     <None Include="bin\Debug\WindowsApp.vshost.exe.config" />
@@ -102,6 +106,8 @@
   <ItemGroup>
     <Content Include="bin\Debug\WindowsApp.vshost.exe" />
     <Content Include="obj\Debug\WindowsApp.csproj.FileListAbsolute.txt" />
+    <None Include="Resources\1959569_1495640907329748_1743433792_n.jpg" />
+    <None Include="Resources\CAM00510.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="obj\Debug\TempPE\" />
