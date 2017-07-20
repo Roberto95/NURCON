@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsApp.Formulario_Nurcon
 {
-    public partial class Pacientes : Form
+    public partial class FrmPacientes : Form
     {
-        public Pacientes()
+        public FrmPacientes()
         {
             InitializeComponent();
         }

@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace WindowsApp.Formulario_Nurcon
 {
-    public partial class Inicio : Form
+    public partial class FrmUsuarios : Form
     {
-        public Inicio()
+        public FrmUsuarios()
         {
             InitializeComponent();
         }
 
-        private void button9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Inicio_Load(object sender, EventArgs e)
+        private void FrmUsuarios_Load(object sender, EventArgs e)
         {
 
         }

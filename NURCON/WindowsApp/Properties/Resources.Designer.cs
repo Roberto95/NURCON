@@ -63,6 +63,16 @@ namespace WindowsApp.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1621766_1478075662419606_895816425_n {
+            get {
+                object obj = ResourceManager.GetObject("1621766_1478075662419606_895816425_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1959569_1495640907329748_1743433792_n {
             get {
                 object obj = ResourceManager.GetObject("1959569_1495640907329748_1743433792_n", resourceCulture);
@@ -73,9 +83,39 @@ namespace WindowsApp.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _19965104_2099333336960499_517419456_n {
+            get {
+                object obj = ResourceManager.GetObject("19965104_2099333336960499_517419456_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _19965104_2099333336960499_517419456_n1 {
+            get {
+                object obj = ResourceManager.GetObject("19965104_2099333336960499_517419456_n1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CAM00510 {
             get {
                 object obj = ResourceManager.GetObject("CAM00510", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kim {
+            get {
+                object obj = ResourceManager.GetObject("kim", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
