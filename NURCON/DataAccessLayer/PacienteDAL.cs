@@ -9,22 +9,28 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer
 {
-    class PacienteDAL
+   public class PacienteDAL
     {
         // se agregaron los Paquetes Nutgets
         // aqui se conecta la base de datos nurcon con la tabla pacientes
         public static NURCONDbContext db = new NURCONDbContext();
     
         // Buscar este metodo viene de la clase dbcontext con prural y singular
+        // este metodode insertar
         public static bool insertar(Paciente m)
+
         {
             db.Pacientes.Add(m);
             return db.SaveChanges() > 0;
         }
+       
+        //  este metodo sirve para consultar
         public static List<Paciente> consulta()
         {
             return db.Pacientes.ToList();
         }
+
+        // este metodo sirve para consultar por nombre
         public static List<Paciente> consultaPorNombre(string nom)
         {
             return db.Pacientes.Where(m => m.Nombre_Paciente == nom).ToList();
