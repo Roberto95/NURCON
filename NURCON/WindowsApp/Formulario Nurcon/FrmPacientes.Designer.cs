@@ -45,13 +45,13 @@
             this.label8 = new System.Windows.Forms.Label();
             this.cboMotivoVisita = new System.Windows.Forms.ComboBox();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtTiposangre = new System.Windows.Forms.TextBox();
             this.txtEdad = new System.Windows.Forms.TextBox();
-            this.txtSexo = new System.Windows.Forms.TextBox();
             this.txtMatricula = new System.Windows.Forms.TextBox();
             this.txtPaciente = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txtTipoSangremodificar = new System.Windows.Forms.TextBox();
             this.txtEdadmodificar = new System.Windows.Forms.TextBox();
             this.txtSexomodificar = new System.Windows.Forms.TextBox();
@@ -62,6 +62,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.txtTiposangreliminar = new System.Windows.Forms.TextBox();
             this.txtEdadeliminar = new System.Windows.Forms.TextBox();
             this.txtSexoeliminar = new System.Windows.Forms.TextBox();
@@ -72,17 +74,15 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.cboSexo = new System.Windows.Forms.ComboBox();
             this.tcModificar.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -149,12 +149,12 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.cboSexo);
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Controls.Add(this.btnGuardar);
             this.tabPage1.Controls.Add(this.pictureBox1);
             this.tabPage1.Controls.Add(this.txtTiposangre);
             this.tabPage1.Controls.Add(this.txtEdad);
-            this.tabPage1.Controls.Add(this.txtSexo);
             this.tabPage1.Controls.Add(this.txtMatricula);
             this.tabPage1.Controls.Add(this.txtPaciente);
             this.tabPage1.Controls.Add(this.label1);
@@ -279,6 +279,18 @@
             this.btnGuardar.TabIndex = 21;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsApp.Properties.Resources.kim;
+            this.pictureBox1.Location = new System.Drawing.Point(685, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(96, 150);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.WaitOnLoad = true;
             // 
             // txtTiposangre
             // 
@@ -293,13 +305,6 @@
             this.txtEdad.Name = "txtEdad";
             this.txtEdad.Size = new System.Drawing.Size(100, 20);
             this.txtEdad.TabIndex = 8;
-            // 
-            // txtSexo
-            // 
-            this.txtSexo.Location = new System.Drawing.Point(166, 162);
-            this.txtSexo.Name = "txtSexo";
-            this.txtSexo.Size = new System.Drawing.Size(100, 20);
-            this.txtSexo.TabIndex = 7;
             // 
             // txtMatricula
             // 
@@ -336,26 +341,15 @@
             this.tabPage2.Text = "Modificar";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
+            // pictureBox2
             // 
-            this.tabPage3.Controls.Add(this.pictureBox3);
-            this.tabPage3.Controls.Add(this.txtTiposangreliminar);
-            this.tabPage3.Controls.Add(this.txtEdadeliminar);
-            this.tabPage3.Controls.Add(this.txtSexoeliminar);
-            this.tabPage3.Controls.Add(this.txtMatriculaeliminar);
-            this.tabPage3.Controls.Add(this.txtPacienteeliminar);
-            this.tabPage3.Controls.Add(this.label9);
-            this.tabPage3.Controls.Add(this.label15);
-            this.tabPage3.Controls.Add(this.label16);
-            this.tabPage3.Controls.Add(this.label17);
-            this.tabPage3.Controls.Add(this.label18);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(913, 564);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Eliminar";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.pictureBox2.Image = global::WindowsApp.Properties.Resources._1621766_1478075662419606_895816425_n;
+            this.pictureBox2.Location = new System.Drawing.Point(631, 67);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(180, 142);
+            this.pictureBox2.TabIndex = 21;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.WaitOnLoad = true;
             // 
             // txtTipoSangremodificar
             // 
@@ -442,6 +436,37 @@
             this.label14.TabIndex = 15;
             this.label14.Text = "Tipo de sangre";
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.pictureBox3);
+            this.tabPage3.Controls.Add(this.txtTiposangreliminar);
+            this.tabPage3.Controls.Add(this.txtEdadeliminar);
+            this.tabPage3.Controls.Add(this.txtSexoeliminar);
+            this.tabPage3.Controls.Add(this.txtMatriculaeliminar);
+            this.tabPage3.Controls.Add(this.txtPacienteeliminar);
+            this.tabPage3.Controls.Add(this.label9);
+            this.tabPage3.Controls.Add(this.label15);
+            this.tabPage3.Controls.Add(this.label16);
+            this.tabPage3.Controls.Add(this.label17);
+            this.tabPage3.Controls.Add(this.label18);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(913, 564);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Eliminar";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::WindowsApp.Properties.Resources._1621766_1478075662419606_895816425_n;
+            this.pictureBox3.Location = new System.Drawing.Point(621, 61);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(180, 142);
+            this.pictureBox3.TabIndex = 32;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.WaitOnLoad = true;
+            // 
             // txtTiposangreliminar
             // 
             this.txtTiposangreliminar.Location = new System.Drawing.Point(466, 110);
@@ -527,37 +552,6 @@
             this.label18.TabIndex = 26;
             this.label18.Text = "Tipo de sangre";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::WindowsApp.Properties.Resources.kim;
-            this.pictureBox1.Location = new System.Drawing.Point(685, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(96, 150);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.WaitOnLoad = true;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::WindowsApp.Properties.Resources._1621766_1478075662419606_895816425_n;
-            this.pictureBox2.Location = new System.Drawing.Point(631, 67);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(180, 142);
-            this.pictureBox2.TabIndex = 21;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.WaitOnLoad = true;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::WindowsApp.Properties.Resources._1621766_1478075662419606_895816425_n;
-            this.pictureBox3.Location = new System.Drawing.Point(621, 61);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(180, 142);
-            this.pictureBox3.TabIndex = 32;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.WaitOnLoad = true;
-            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -568,14 +562,26 @@
             this.button1.Text = "Regresar";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // Pacientes
+            // cboSexo
+            // 
+            this.cboSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboSexo.FormattingEnabled = true;
+            this.cboSexo.Items.AddRange(new object[] {
+            "F",
+            "M"});
+            this.cboSexo.Location = new System.Drawing.Point(165, 161);
+            this.cboSexo.Name = "cboSexo";
+            this.cboSexo.Size = new System.Drawing.Size(101, 21);
+            this.cboSexo.TabIndex = 24;
+            // 
+            // FrmPacientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1354, 733);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tcModificar);
-            this.Name = "Pacientes";
+            this.Name = "FrmPacientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Pacientes";
             this.tcModificar.ResumeLayout(false);
@@ -583,12 +589,12 @@
             this.tabPage1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
@@ -605,7 +611,6 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TextBox txtTiposangre;
         private System.Windows.Forms.TextBox txtEdad;
-        private System.Windows.Forms.TextBox txtSexo;
         private System.Windows.Forms.TextBox txtMatricula;
         private System.Windows.Forms.TextBox txtPaciente;
         private System.Windows.Forms.TabPage tabPage2;
@@ -644,5 +649,6 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cboSexo;
     }
 }

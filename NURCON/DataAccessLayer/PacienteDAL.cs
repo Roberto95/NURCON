@@ -35,5 +35,11 @@ namespace DataAccessLayer
         {
             return db.Pacientes.Where(m => m.Nombre_Paciente == nom).ToList();
         }
+
+        public static bool consultaPorMatricula(int n)
+        {
+            return db.Pacientes.Where(m => m.Matricula== n).Count()>0;
+            // la m se declara aqui es tipo bool y buscamos por matricula
+        }
     }
 }

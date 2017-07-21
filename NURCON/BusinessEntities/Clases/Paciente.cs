@@ -7,22 +7,15 @@ using System.Threading.Tasks;
 
 namespace BusinessEntities.Clases
 {
-   public  class Paciente
+   public class Paciente
     {
-        [Key]
+        [Key]/// si no  funciona la quitamos
+        public int Id { get; set; }
         public string Nombre_Paciente {get; set;}
         public int Matricula { get;  set; }
-        public bool Sexo { get; set; }
+        public string Sexo { get; set; }
         public int Edad { get; set; }
-        public string Tipo_de_sangre { get; set; }
-
-        public string Motivo_de_visita { get; set; }
-    
-        public string Medicamentos { get; set;}
-
-        public string Notas { get; set;}
-        public string Sintomas { get; set; }
-
+       
 
 
     
