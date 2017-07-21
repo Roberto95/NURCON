@@ -21,6 +21,13 @@ namespace DataAccessLayer
             db.Pacientes.Add(m);
             return db.SaveChanges() > 0;
         }
-
+        public static List<Paciente> consulta()
+        {
+            return db.Pacientes.ToList();
+        }
+        public static List<Paciente> consultaPorNombre(string nom)
+        {
+            return db.Pacientes.Where(m => m.Nombre_Paciente == nom).ToList();
+        }
     }
 }
