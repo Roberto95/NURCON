@@ -56,15 +56,7 @@ namespace BusinessLogicLayer
             return mensaje;
         }
 
-
-
-
-
-
-
-
-
-
+        
 
         public static List<Paciente> visualizar()
         {
@@ -74,6 +66,12 @@ namespace BusinessLogicLayer
         public static List<Paciente> busquedaNombre(string nom)
         {
             return DataAccessLayer.PacienteDAL.consultaPorNombre(nom);
+
+
+        }
+        public static List<Paciente> consultaPormatricula(int mat)
+        {
+            return DataAccessLayer.PacienteDAL.consultaPormatricula(mat);
 
 
         }

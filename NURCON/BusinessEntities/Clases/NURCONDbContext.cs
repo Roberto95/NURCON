@@ -17,6 +17,7 @@ namespace BusinessEntities.Clases
         { }
 
         public DbSet<Paciente>Pacientes{ get; set; }
+        public DbSet<Diagnostico> Diagnoticos { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

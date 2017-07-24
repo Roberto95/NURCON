@@ -17,7 +17,7 @@ namespace WindowsApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmPacientes ());
+            Application.Run(new FrmInicio());
         }
     }
 }

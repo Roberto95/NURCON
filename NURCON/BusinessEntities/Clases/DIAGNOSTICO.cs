@@ -16,5 +16,9 @@ namespace BusinessEntities.Clases
         public string Sintomas { get; set; }
         public int PacienteId { get; set; }
 
+
+        // aqui le ponemos la fk de la tabla
+
+
     }
 }
