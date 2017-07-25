@@ -76,5 +76,15 @@ namespace BusinessLogicLayer
 
         }
 
+        public static List<Paciente>consultaPorID(int ma)
+        { 
+            return DataAccessLayer.PacienteDAL.consultaPorID(ma);            
+        }
+
+        public static bool eliminar(int matricula )
+        {
+            return DataAccessLayer.PacienteDAL.eliminar(matricula);
+        }
+       
     }
 }

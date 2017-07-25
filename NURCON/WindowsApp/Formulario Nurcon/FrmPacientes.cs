@@ -96,40 +96,23 @@ namespace WindowsApp.Formulario_Nurcon
 
         private void btnBuscarVisualizar_Click(object sender, EventArgs e)
         {
+            // vamos a visualizar la tabla de diagnostico
 
-            dtgVisualizar.DataSource = BusinessLogicLayer.PacienteBLL.visualizar();
+            dtgVisualizar.DataSource = BusinessLogicLayer.PacienteBLL.consultaPormatricula(Convert.ToInt32(txtMatriculaVisualizar.Text));
 
+            }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            dgvVisualizarEliminacion.DataSource = BusinessLogicLayer.PacienteBLL.visualizar();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label25_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            //----------------------------------------
-            //sacar id del paciente que acabamos de registrar
-            int VarNR = BusinessLogicLayer.PacienteBLL.consultaPormatricula(Convert.ToInt32(txtMatriculaNR.Text)).ToList()[0].Id;
-            // uso la matricula entonces se pone aqui en m.matricula 
-
-            //--------------------------------------
-            Diagnostico l = new Diagnostico();
-            l.Tipo_de_sangre = txtTipo_sangreNR.Text;
-            l.Medicamentos = cboMedicamentosNR.SelectedItem.ToString();
-            l.Motivo_de_visita = cboMotivo_visitaNR.SelectedItem.ToString();
-            l.Notas = txtNotasNR.Text;
-            l.Sintomas = txtSintomasNR.Text;
-            l.PacienteId = VarNR;
-
-            BusinessLogicLayer.DiagnosticoBLL.insertar(l);
-
+            BusinessLogicLayer.PacienteBLL.eliminar(Convert.ToInt32(txtMatriculaeliminar.Text));
         }
     }
-}
+
+  
+    }
+

@@ -34,6 +34,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tcModificar = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
             this.cboSexo = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtTipo_sangre = new System.Windows.Forms.TextBox();
@@ -51,37 +52,18 @@
             this.txtEdad = new System.Windows.Forms.TextBox();
             this.txtMatricula = new System.Windows.Forms.TextBox();
             this.txtPaciente = new System.Windows.Forms.TextBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.txtTipoSangremodificar = new System.Windows.Forms.TextBox();
-            this.txtEdadmodificar = new System.Windows.Forms.TextBox();
-            this.txtSexomodificar = new System.Windows.Forms.TextBox();
-            this.txtMatriculamodificar = new System.Windows.Forms.TextBox();
-            this.txtPacientemodificar = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button3 = new System.Windows.Forms.Button();
-            this.txtTiposangreliminar = new System.Windows.Forms.TextBox();
-            this.txtEdadeliminar = new System.Windows.Forms.TextBox();
-            this.txtSexoeliminar = new System.Windows.Forms.TextBox();
             this.txtMatriculaeliminar = new System.Windows.Forms.TextBox();
-            this.txtPacienteeliminar = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtMatriculaVisualizar = new System.Windows.Forms.TextBox();
             this.btnBuscarVisualizar = new System.Windows.Forms.Button();
             this.dtgVisualizar = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label25 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtTipo_sangreNR = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -95,18 +77,30 @@
             this.cboMotivo_visitaNR = new System.Windows.Forms.ComboBox();
             this.txtMatriculaNR = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dgvVisualizarEliminacion = new System.Windows.Forms.DataGridView();
+            this.button5 = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
             this.tcModificar.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgVisualizar)).BeginInit();
             this.tabPage5.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVisualizarEliminacion)).BeginInit();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -185,6 +179,15 @@
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(49, 539);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(140, 30);
+            this.button2.TabIndex = 25;
+            this.button2.Text = "Agregar Diagnostico";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // cboSexo
             // 
             this.cboSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -243,7 +246,6 @@
             this.cboMedicamentos.Name = "cboMedicamentos";
             this.cboMedicamentos.Size = new System.Drawing.Size(120, 26);
             this.cboMedicamentos.TabIndex = 23;
-            this.cboMedicamentos.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -360,124 +362,13 @@
             this.txtPaciente.Size = new System.Drawing.Size(100, 20);
             this.txtPaciente.TabIndex = 5;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.txtTipoSangremodificar);
-            this.tabPage2.Controls.Add(this.txtEdadmodificar);
-            this.tabPage2.Controls.Add(this.txtSexomodificar);
-            this.tabPage2.Controls.Add(this.txtMatriculamodificar);
-            this.tabPage2.Controls.Add(this.txtPacientemodificar);
-            this.tabPage2.Controls.Add(this.label10);
-            this.tabPage2.Controls.Add(this.label11);
-            this.tabPage2.Controls.Add(this.label12);
-            this.tabPage2.Controls.Add(this.label13);
-            this.tabPage2.Controls.Add(this.label14);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(949, 633);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Modificar";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // txtTipoSangremodificar
-            // 
-            this.txtTipoSangremodificar.Location = new System.Drawing.Point(464, 116);
-            this.txtTipoSangremodificar.Name = "txtTipoSangremodificar";
-            this.txtTipoSangremodificar.Size = new System.Drawing.Size(100, 20);
-            this.txtTipoSangremodificar.TabIndex = 20;
-            // 
-            // txtEdadmodificar
-            // 
-            this.txtEdadmodificar.Location = new System.Drawing.Point(464, 71);
-            this.txtEdadmodificar.Name = "txtEdadmodificar";
-            this.txtEdadmodificar.Size = new System.Drawing.Size(100, 20);
-            this.txtEdadmodificar.TabIndex = 19;
-            // 
-            // txtSexomodificar
-            // 
-            this.txtSexomodificar.Location = new System.Drawing.Point(166, 163);
-            this.txtSexomodificar.Name = "txtSexomodificar";
-            this.txtSexomodificar.Size = new System.Drawing.Size(100, 20);
-            this.txtSexomodificar.TabIndex = 18;
-            // 
-            // txtMatriculamodificar
-            // 
-            this.txtMatriculamodificar.Location = new System.Drawing.Point(166, 118);
-            this.txtMatriculamodificar.Name = "txtMatriculamodificar";
-            this.txtMatriculamodificar.Size = new System.Drawing.Size(100, 20);
-            this.txtMatriculamodificar.TabIndex = 17;
-            // 
-            // txtPacientemodificar
-            // 
-            this.txtPacientemodificar.Location = new System.Drawing.Point(166, 67);
-            this.txtPacientemodificar.Name = "txtPacientemodificar";
-            this.txtPacientemodificar.Size = new System.Drawing.Size(100, 20);
-            this.txtPacientemodificar.TabIndex = 16;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(35, 70);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(79, 18);
-            this.label10.TabIndex = 11;
-            this.label10.Text = "Paciente";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(35, 118);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(82, 18);
-            this.label11.TabIndex = 12;
-            this.label11.Text = "Matricula";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(35, 165);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(47, 18);
-            this.label12.TabIndex = 13;
-            this.label12.Text = "Sexo";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(339, 70);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(49, 18);
-            this.label13.TabIndex = 14;
-            this.label13.Text = "Edad";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(332, 118);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(126, 18);
-            this.label14.TabIndex = 15;
-            this.label14.Text = "Tipo de sangre";
-            // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.button5);
+            this.tabPage3.Controls.Add(this.dgvVisualizarEliminacion);
             this.tabPage3.Controls.Add(this.button3);
-            this.tabPage3.Controls.Add(this.txtTiposangreliminar);
-            this.tabPage3.Controls.Add(this.txtEdadeliminar);
-            this.tabPage3.Controls.Add(this.txtSexoeliminar);
             this.tabPage3.Controls.Add(this.txtMatriculaeliminar);
-            this.tabPage3.Controls.Add(this.txtPacienteeliminar);
-            this.tabPage3.Controls.Add(this.label9);
             this.tabPage3.Controls.Add(this.label15);
-            this.tabPage3.Controls.Add(this.label16);
-            this.tabPage3.Controls.Add(this.label17);
-            this.tabPage3.Controls.Add(this.label18);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -488,102 +379,35 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(696, 259);
+            this.button3.Location = new System.Drawing.Point(304, 56);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 33;
             this.button3.Text = "Eliminar";
             this.button3.UseVisualStyleBackColor = true;
-            // 
-            // txtTiposangreliminar
-            // 
-            this.txtTiposangreliminar.Location = new System.Drawing.Point(466, 110);
-            this.txtTiposangreliminar.Name = "txtTiposangreliminar";
-            this.txtTiposangreliminar.Size = new System.Drawing.Size(100, 20);
-            this.txtTiposangreliminar.TabIndex = 31;
-            // 
-            // txtEdadeliminar
-            // 
-            this.txtEdadeliminar.Location = new System.Drawing.Point(464, 65);
-            this.txtEdadeliminar.Name = "txtEdadeliminar";
-            this.txtEdadeliminar.Size = new System.Drawing.Size(100, 20);
-            this.txtEdadeliminar.TabIndex = 30;
-            // 
-            // txtSexoeliminar
-            // 
-            this.txtSexoeliminar.Location = new System.Drawing.Point(168, 157);
-            this.txtSexoeliminar.Name = "txtSexoeliminar";
-            this.txtSexoeliminar.Size = new System.Drawing.Size(100, 20);
-            this.txtSexoeliminar.TabIndex = 29;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // txtMatriculaeliminar
             // 
-            this.txtMatriculaeliminar.Location = new System.Drawing.Point(168, 112);
+            this.txtMatriculaeliminar.Location = new System.Drawing.Point(173, 59);
             this.txtMatriculaeliminar.Name = "txtMatriculaeliminar";
             this.txtMatriculaeliminar.Size = new System.Drawing.Size(100, 20);
             this.txtMatriculaeliminar.TabIndex = 28;
-            // 
-            // txtPacienteeliminar
-            // 
-            this.txtPacienteeliminar.Location = new System.Drawing.Point(168, 61);
-            this.txtPacienteeliminar.Name = "txtPacienteeliminar";
-            this.txtPacienteeliminar.Size = new System.Drawing.Size(100, 20);
-            this.txtPacienteeliminar.TabIndex = 27;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(37, 64);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(79, 18);
-            this.label9.TabIndex = 22;
-            this.label9.Text = "Paciente";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(37, 112);
+            this.label15.Location = new System.Drawing.Point(42, 59);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(82, 18);
             this.label15.TabIndex = 23;
             this.label15.Text = "Matricula";
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(37, 159);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(47, 18);
-            this.label16.TabIndex = 24;
-            this.label16.Text = "Sexo";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(341, 64);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(49, 18);
-            this.label17.TabIndex = 25;
-            this.label17.Text = "Edad";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(334, 112);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(126, 18);
-            this.label18.TabIndex = 26;
-            this.label18.Text = "Tipo de sangre";
-            // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.label20);
-            this.tabPage4.Controls.Add(this.textBox2);
+            this.tabPage4.Controls.Add(this.txtMatriculaVisualizar);
             this.tabPage4.Controls.Add(this.btnBuscarVisualizar);
             this.tabPage4.Controls.Add(this.dtgVisualizar);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
@@ -605,12 +429,12 @@
             this.label20.TabIndex = 4;
             this.label20.Text = "Ingrese su Matricula";
             // 
-            // textBox2
+            // txtMatriculaVisualizar
             // 
-            this.textBox2.Location = new System.Drawing.Point(167, 80);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(108, 20);
-            this.textBox2.TabIndex = 2;
+            this.txtMatriculaVisualizar.Location = new System.Drawing.Point(167, 80);
+            this.txtMatriculaVisualizar.Name = "txtMatriculaVisualizar";
+            this.txtMatriculaVisualizar.Size = new System.Drawing.Size(108, 20);
+            this.txtMatriculaVisualizar.TabIndex = 2;
             // 
             // btnBuscarVisualizar
             // 
@@ -630,25 +454,6 @@
             this.dtgVisualizar.Size = new System.Drawing.Size(725, 296);
             this.dtgVisualizar.TabIndex = 0;
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1191, 604);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 38);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Regresar";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(49, 539);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(140, 30);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "Agregar Diagnostico";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.button4);
@@ -663,6 +468,25 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(668, 478);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(167, 51);
+            this.button4.TabIndex = 35;
+            this.button4.Text = "Agregar Registro";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(69, 53);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(221, 24);
+            this.label25.TabIndex = 34;
+            this.label25.Text = "Ingrese  la matricula ";
             // 
             // groupBox2
             // 
@@ -800,26 +624,134 @@
             this.label26.TabIndex = 26;
             this.label26.Text = "Matricula";
             // 
-            // label25
+            // button1
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(69, 53);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(221, 24);
-            this.label25.TabIndex = 34;
-            this.label25.Text = "Ingrese  la matricula ";
-            this.label25.Click += new System.EventHandler(this.label25_Click);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(1191, 604);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(116, 38);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Regresar";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // dgvVisualizarEliminacion
             // 
-            this.button4.Location = new System.Drawing.Point(668, 478);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(167, 51);
-            this.button4.TabIndex = 35;
-            this.button4.Text = "Agregar Registro";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.dgvVisualizarEliminacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvVisualizarEliminacion.Location = new System.Drawing.Point(45, 139);
+            this.dgvVisualizarEliminacion.Name = "dgvVisualizarEliminacion";
+            this.dgvVisualizarEliminacion.Size = new System.Drawing.Size(744, 330);
+            this.dgvVisualizarEliminacion.TabIndex = 34;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(618, 58);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(171, 23);
+            this.button5.TabIndex = 35;
+            this.button5.Text = "Ver Tabla";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.button6);
+            this.tabPage2.Controls.Add(this.comboBox1);
+            this.tabPage2.Controls.Add(this.textBox2);
+            this.tabPage2.Controls.Add(this.textBox3);
+            this.tabPage2.Controls.Add(this.textBox4);
+            this.tabPage2.Controls.Add(this.label9);
+            this.tabPage2.Controls.Add(this.label10);
+            this.tabPage2.Controls.Add(this.label11);
+            this.tabPage2.Controls.Add(this.label12);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(949, 633);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Modificar";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "F",
+            "M"});
+            this.comboBox1.Location = new System.Drawing.Point(511, 249);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(101, 21);
+            this.comboBox1.TabIndex = 32;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(506, 206);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 31;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(208, 253);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 30;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(208, 202);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.TabIndex = 29;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(77, 205);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(79, 18);
+            this.label9.TabIndex = 25;
+            this.label9.Text = "Paciente";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(77, 253);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(82, 18);
+            this.label10.TabIndex = 26;
+            this.label10.Text = "Matricula";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(381, 252);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(47, 18);
+            this.label11.TabIndex = 27;
+            this.label11.Text = "Sexo";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(381, 205);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(49, 18);
+            this.label12.TabIndex = 28;
+            this.label12.Text = "Edad";
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(699, 206);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(147, 23);
+            this.button6.TabIndex = 33;
+            this.button6.Text = "Actualizar Datos";
+            this.button6.UseVisualStyleBackColor = true;
             // 
             // FrmPacientes
             // 
@@ -837,8 +769,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
@@ -848,6 +778,9 @@
             this.tabPage5.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVisualizarEliminacion)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -863,7 +796,6 @@
         private System.Windows.Forms.TextBox txtEdad;
         private System.Windows.Forms.TextBox txtMatricula;
         private System.Windows.Forms.TextBox txtPaciente;
-        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnGuardar;
@@ -876,32 +808,14 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox cboMedicamentos;
-        private System.Windows.Forms.TextBox txtTipoSangremodificar;
-        private System.Windows.Forms.TextBox txtEdadmodificar;
-        private System.Windows.Forms.TextBox txtSexomodificar;
-        private System.Windows.Forms.TextBox txtMatriculamodificar;
-        private System.Windows.Forms.TextBox txtPacientemodificar;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox txtTiposangreliminar;
-        private System.Windows.Forms.TextBox txtEdadeliminar;
-        private System.Windows.Forms.TextBox txtSexoeliminar;
         private System.Windows.Forms.TextBox txtMatriculaeliminar;
-        private System.Windows.Forms.TextBox txtPacienteeliminar;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox cboSexo;
         private System.Windows.Forms.Button button3;
         internal System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtMatriculaVisualizar;
         private System.Windows.Forms.Button btnBuscarVisualizar;
         private System.Windows.Forms.DataGridView dtgVisualizar;
         private System.Windows.Forms.TextBox txtTipo_sangre;
@@ -923,5 +837,17 @@
         private System.Windows.Forms.TextBox txtMatriculaNR;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.DataGridView dgvVisualizarEliminacion;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
     }
 }

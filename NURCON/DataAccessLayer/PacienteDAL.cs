@@ -1,6 +1,7 @@
 ﻿using BusinessEntities.Clases;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -50,6 +51,22 @@ namespace DataAccessLayer
             return db.Pacientes.Where(m => m.Matricula == mat).ToList();
         }
 
+        public static List<Paciente> consultaPorID(int ma)
+        {
+            return db.Pacientes.Where(m => m.Id == ma).ToList();
+        }
+        public static bool eliminar(int mat)
+        {
+            var query = db.Pacientes.Where(p => p.Matricula == mat).Single();//el single trae la entidad completa con su informacion
+            db.Pacientes.Remove(query);
+            return db.SaveChanges() > 0;
+        }
+        public static bool actualizar(Paciente kk)
+        {
+            db.Pacientes.Attach(kk);
+            db.Entry(kk).State = EntityState.Modified; //actualizacion
+            return db.SaveChanges() > 0;
+        }
 
     }
 }
