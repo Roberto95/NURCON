@@ -16,7 +16,7 @@ namespace DataAccessLayer
         // aqui se conecta la base de datos nurcon con la tabla pacientes
         public static NURCONDbContext db = new NURCONDbContext();
 
-        // Buscar este metodo viene de la clase dbcontext con prural y singular
+        // Buscar este metodo viene de la clase dbcontext con plural y singular
         // este metodode insertar
         public static bool insertar(Paciente m)
 
@@ -44,7 +44,7 @@ namespace DataAccessLayer
         }
 
 
-        // consultar por matricula XD
+        // consultar por matricula 
 
         public static List<Paciente> consultaPormatricula(int mat)
         {

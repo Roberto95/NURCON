@@ -9,8 +9,8 @@ namespace BusinessLogicLayer
 {
    public class PacienteBLL
     {
-        // se agregaron los Paquetes Nutgets
-        // se creo una lista que viene de bussines entities y BLL es de consultar
+        // se agregaron los Paquetes Nugets
+        // se creo una lista que viene de business entities y BLL es de consultar
         public static string insertar(Paciente m)
         {
             string mensaje = "";
@@ -31,11 +31,11 @@ namespace BusinessLogicLayer
             else
             {
 
-                //validar que el medico no se repita
+                //validar que el paciente no se repita
                 bool isExist = DataAccessLayer.PacienteDAL.consultaPorMatricula(m.Matricula);
                 if (isExist)
                 {
-                    mensaje = "Medico ya registrado";
+                    mensaje = "Paciente ya registrado";
                 }
                 else
                 {
@@ -47,7 +47,7 @@ namespace BusinessLogicLayer
                     }
                     else
                     {
-                        mensaje = "Error de insercion";
+                        mensaje = "Error de insercion de paciente";
                     }
 
                 }

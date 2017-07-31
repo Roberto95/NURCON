@@ -35,10 +35,10 @@ namespace WindowsApp.Formulario_Nurcon
         {
 
             Paciente m = new Paciente();
-            m.Nombre_Paciente = txtPaciente.Text;
-            m.Matricula = ((Convert.ToInt32(txtMatricula.Text.ToString())));
+            m.Nombre_Paciente = txtPaciente.Text.Trim().ToUpper();
+            m.Matricula = ((Convert.ToInt32(txtMatricula.Text.ToString().Trim().ToUpper())));
             m.Sexo = cboSexo.SelectedItem.ToString();
-            m.Edad = ((Convert.ToInt32(txtEdad.Text.ToString())));
+            m.Edad = ((Convert.ToInt32(txtEdad.Text.ToString().Trim().ToUpper())));
             string mensaje = BusinessLogicLayer.PacienteBLL.insertar(m);
 
 
@@ -50,32 +50,38 @@ namespace WindowsApp.Formulario_Nurcon
 
             //--------------------------------------
             Diagnostico l = new Diagnostico(); 
-            l.Tipo_de_sangre = txtTipo_sangre.Text;
-            l.Medicamentos = cboMedicamentos.SelectedItem.ToString();
-            l.Motivo_de_visita = cboMotivoVisita.SelectedItem.ToString();
-            l.Notas = txtSintomas.Text;
-            l.Sintomas = txtSintomas.Text;
+            l.Tipo_de_sangre = txtTipo_sangre.Text.Trim().ToUpper();
+            l.Medicamentos = cboMedicamentos.SelectedItem.ToString().Trim().ToUpper();
+            l.Motivo_de_visita = cboMotivoVisita.SelectedItem.ToString().Trim().ToUpper();
+            l.Notas = txtNotas.Text.Trim().ToUpper();
+            l.Sintomas = txtSintomas.Text.Trim().ToUpper();
             l.PacienteId = var;
-
-            string mensajes = BusinessLogicLayer.DiagnosticoBLL.insertar(l);
 
             
 
-                //if (string.IsNullOrEmpty(mensaje))
-                //{
-                //    MessageBox.Show("Se registro correctamente");
-                //     txtPaciente.Text = "";
-                //txtMatricula.Text = "";
-                //txtEdad.Text = "";
-                //    cboSexo.SelectedItem = null;
 
 
-                     
-                //}
-                //else
-                //{
-                //    MessageBox.Show(mensaje, "Error");
-                //}
+
+
+            if (string.IsNullOrEmpty(mensaje)&& BusinessLogicLayer.DiagnosticoBLL.insertar(l))
+            {
+                MessageBox.Show("Registrado correctamente","Aviso",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                txtPaciente.Text = "";
+                txtMatricula.Text = "";
+                txtEdad.Text = "";
+                cboSexo.SelectedItem = null;
+                txtNotas.Text = "";
+                txtSintomas.Text = "";
+                txtTipo_sangre.Text = "";
+                cboMedicamentos.SelectedItem = null;
+                cboMotivoVisita.SelectedItem = null;
+
+
+            }
+            else
+            {
+                MessageBox.Show(mensaje, "Error", MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
 
         }
 
@@ -111,6 +117,42 @@ namespace WindowsApp.Formulario_Nurcon
         {
             BusinessLogicLayer.PacienteBLL.eliminar(Convert.ToInt32(txtMatriculaeliminar.Text));
         }
+
+        private void btnGuardarNDiag_Click(object sender, EventArgs e)
+        {
+            //sacar id del paciente al que queremos agregar un nuevo diagnostico
+
+            int var = BusinessLogicLayer.PacienteBLL.consultaPormatricula(Convert.ToInt32(txtMatriculaNR.Text)).ToList()[0].Id;
+            //crear instancia de diagnostico y agregar valores
+            Diagnostico l = new Diagnostico(); 
+            l.Tipo_de_sangre = txtTipoSangreND.Text.Trim().ToUpper();
+            l.Medicamentos = cboMedicamentosND.SelectedItem.ToString().Trim().ToUpper();
+            l.Motivo_de_visita = cboMotivoVisitaND.SelectedItem.ToString().Trim().ToUpper();
+            l.Notas = txtNotasND.Text.Trim().ToUpper();
+            l.Sintomas = txtSintomasND.Text.Trim().ToUpper();
+            l.PacienteId = var;
+
+            //validar que se registro correctamente
+            if (BusinessLogicLayer.DiagnosticoBLL.insertar(l))
+            {
+                MessageBox.Show("Registrado correctamente");
+                txtMatriculaNR.Text = "";
+                txtSintomasND.Text = "";
+                txtTipoSangreND.Text = "";
+                cboMedicamentosND.SelectedItem = null;
+                txtNotasND.Text = "";
+                cboMotivoVisitaND.SelectedItem = null;
+ 
+
+
+            }
+            else
+            {
+                MessageBox.Show("Error de inserción", "Error");
+            }
+        }
+
+      
     }
 
   
