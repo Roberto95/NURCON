@@ -19,6 +19,7 @@ namespace BusinessEntities.Clases
 
         // aqui le ponemos la fk de la tabla
 
+        
 
     }
 }

@@ -36,14 +36,6 @@ namespace DataAccessLayer
         {
             return db.Pacientes.Where(m => m.Nombre_Paciente == nom).ToList();
         }
-
-        public static bool consultaPorMatricula(int n)
-        {
-            return db.Pacientes.Where(m => m.Matricula == n).Count() > 0;
-            // la m se declara aqui es tipo bool y buscamos por matricula
-        }
-
-
         // consultar por matricula 
 
         public static List<Paciente> consultaPormatricula(int mat)
@@ -61,12 +53,14 @@ namespace DataAccessLayer
             db.Pacientes.Remove(query);
             return db.SaveChanges() > 0;
         }
-        public static bool actualizar(Paciente kk)
+        public static bool actualizar(Paciente p)
         {
-            db.Pacientes.Attach(kk);
-            db.Entry(kk).State = EntityState.Modified; //actualizacion
+            db.Pacientes.Attach(p);
+            db.Entry(p).State = EntityState.Modified; //actualizacion
             return db.SaveChanges() > 0;
         }
-
+        public static bool matRepetida(int mat) {
+            return db.Pacientes.Where(m => m.Matricula == mat).Count()>0;
+        }
     }
 }

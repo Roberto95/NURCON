@@ -15,24 +15,9 @@ namespace BusinessLogicLayer
         {
             string mensaje = "";
             //validar que no hay campos vacios
-            if (
-                string.IsNullOrEmpty(m.Nombre_Paciente)
-                || string.IsNullOrEmpty(Convert.ToString(m.Matricula))
-                || string.IsNullOrEmpty(m.Sexo)
-                || string.IsNullOrEmpty((Convert.ToString(m.Edad))
-
-
-              )
-              )
-            { 
-
-                mensaje = "Favor de completar el formulario o usar el formato correcto";
-            }
-            else
-            {
-
+           
                 //validar que el paciente no se repita
-                bool isExist = DataAccessLayer.PacienteDAL.consultaPorMatricula(m.Matricula);
+                bool isExist = DataAccessLayer.PacienteDAL.matRepetida(m.Matricula);
                 if (isExist)
                 {
                     mensaje = "Paciente ya registrado";
@@ -52,11 +37,9 @@ namespace BusinessLogicLayer
 
                 }
 
-            }
+            
             return mensaje;
         }
-
-        
 
         public static List<Paciente> visualizar()
         {
@@ -85,6 +68,11 @@ namespace BusinessLogicLayer
         {
             return DataAccessLayer.PacienteDAL.eliminar(matricula);
         }
+
+        public static bool matRepetida(int mat) {
+            return DataAccessLayer.PacienteDAL.matRepetida(mat);
+        }
+        
        
     }
 }

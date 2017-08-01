@@ -27,9 +27,6 @@ namespace WindowsApp.Formulario_Nurcon
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
+     
     }
 }

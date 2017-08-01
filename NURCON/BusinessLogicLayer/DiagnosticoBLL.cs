@@ -52,8 +52,12 @@ namespace BusinessLogicLayer
             return val;
         }
 
-
-
+        public static List<Diagnostico> consultaIdPac(int id) {
+            return DataAccessLayer.DiagnosticoDAL.consultaporIdpac(id);
+        }
+        public static List<Diagnostico> visualizar() {
+            return DataAccessLayer.DiagnosticoDAL.visualizar();
+        }
 
     }
 }

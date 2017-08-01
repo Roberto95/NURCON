@@ -11,7 +11,7 @@ namespace DataAccessLayer
     {
         // se agregaron los Paquetes Nutgets
         // aqui se conecta la base de datos nurcon con la tabla Diagnostico
-        public static NURCONDbContext BBB = new NURCONDbContext();
+        public static NURCONDbContext db = new NURCONDbContext();
 
         // Buscar este metodo viene de la clase dbcontext con prural y singular
         // este metodode insertar
@@ -22,11 +22,18 @@ namespace DataAccessLayer
         public static bool insertar(Diagnostico l)
 
         {
-            BBB.Diagnoticos.Add(l);
-            return BBB.SaveChanges() > 0;
+            db.Diagnoticos.Add(l);
+            return db.SaveChanges() > 0;
         }
-        ///////// como solo ocupamos insertar hasta el momento
+        
+        public static List<Diagnostico> consultaporIdpac(int id)
+        {
+            return db.Diagnoticos.Where(d => d.PacienteId == id).ToList();
+        }
 
+        public static List<Diagnostico> visualizar() {
+            return db.Diagnoticos.ToList();
+        }
 
     }
 }
