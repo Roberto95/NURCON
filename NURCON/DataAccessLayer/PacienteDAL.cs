@@ -53,14 +53,16 @@ namespace DataAccessLayer
             db.Pacientes.Remove(query);
             return db.SaveChanges() > 0;
         }
+       
+        public static bool matRepetida(int mat) {
+            return db.Pacientes.Where(m => m.Matricula == mat).Count()>0;
+        }
+
         public static bool actualizar(Paciente p)
         {
             db.Pacientes.Attach(p);
             db.Entry(p).State = EntityState.Modified; //actualizacion
             return db.SaveChanges() > 0;
-        }
-        public static bool matRepetida(int mat) {
-            return db.Pacientes.Where(m => m.Matricula == mat).Count()>0;
         }
     }
 }
