@@ -58,11 +58,14 @@ namespace DataAccessLayer
             return db.Pacientes.Where(m => m.Matricula == mat).Count()>0;
         }
 
-        public static bool actualizar(Paciente p)
+       // actualizacion /////////////////////
+
+        public static bool actualizar (Paciente p)
         {
             db.Pacientes.Attach(p);
-            db.Entry(p).State = EntityState.Modified; //actualizacion
+            db.Entry(p).State = EntityState.Modified; 
             return db.SaveChanges() > 0;
         }
+        // actualizacion//////////////////////////
     }
 }
