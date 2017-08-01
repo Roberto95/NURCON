@@ -41,6 +41,7 @@
             // 
             // btnNuevoPaciente
             // 
+            this.btnNuevoPaciente.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevoPaciente.Location = new System.Drawing.Point(71, 120);
             this.btnNuevoPaciente.Name = "btnNuevoPaciente";
             this.btnNuevoPaciente.Size = new System.Drawing.Size(181, 90);
@@ -51,6 +52,7 @@
             // 
             // btnVisualizar
             // 
+            this.btnVisualizar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVisualizar.Location = new System.Drawing.Point(499, 120);
             this.btnVisualizar.Name = "btnVisualizar";
             this.btnVisualizar.Size = new System.Drawing.Size(181, 90);
@@ -60,6 +62,7 @@
             // 
             // btnModificar
             // 
+            this.btnModificar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.Location = new System.Drawing.Point(285, 120);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(181, 90);
@@ -70,6 +73,7 @@
             // 
             // button4
             // 
+            this.button4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(713, 120);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(181, 90);
@@ -79,15 +83,17 @@
             // 
             // button5
             // 
+            this.button5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(71, 271);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(181, 88);
             this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
+            this.button5.Text = "Modificar Paciente";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
+            this.button6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Location = new System.Drawing.Point(285, 271);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(181, 90);
@@ -97,6 +103,7 @@
             // 
             // button7
             // 
+            this.button7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.Location = new System.Drawing.Point(499, 269);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(181, 90);
@@ -106,6 +113,7 @@
             // 
             // btnSalir
             // 
+            this.btnSalir.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.Location = new System.Drawing.Point(713, 269);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(181, 90);
@@ -117,10 +125,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(260, 40);
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(258, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(431, 33);
+            this.label1.Size = new System.Drawing.Size(470, 37);
             this.label1.TabIndex = 8;
             this.label1.Text = "Bienvenido a Nursing Control";
             // 
