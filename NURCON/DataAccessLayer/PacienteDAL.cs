@@ -60,10 +60,14 @@ namespace DataAccessLayer
 
        // actualizacion /////////////////////
 
-        public static bool actualizar (Paciente p)
-        {
-            db.Pacientes.Attach(p);
-            db.Entry(p).State = EntityState.Modified; 
+       
+        public static bool actualizarDos(Paciente p) {
+            var pacienteed = db.Pacientes.FirstOrDefault(x => x.Id == p.Id);
+            pacienteed.Id = p.Id;
+            pacienteed.Matricula = p.Matricula;
+            pacienteed.Nombre_Paciente = p.Nombre_Paciente;
+            pacienteed.Edad = p.Edad;
+            pacienteed.Sexo = p.Sexo;
             return db.SaveChanges() > 0;
         }
         // actualizacion//////////////////////////

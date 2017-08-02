@@ -14,7 +14,7 @@ namespace BusinessLogicLayer
         public static string insertar(Paciente m)
         {
             string mensaje = "";
-            //validar que no hay campos vacios
+          
 
             //validar que el paciente no se repita
             bool isExist = DataAccessLayer.PacienteDAL.matRepetida(m.Matricula);
@@ -78,8 +78,23 @@ namespace BusinessLogicLayer
         // actualizacion
         public static bool actualizar(Paciente p)
         {
-            return DataAccessLayer.PacienteDAL.actualizar(p);
+            return DataAccessLayer.PacienteDAL.actualizarDos(p);
         }
+
+        public static string actualizarMat(int mat,int id) {
+            
+            string mensaje="";
+            int var = DataAccessLayer.PacienteDAL.consultaPormatricula(mat).ToList()[0].Id;
+            if (var!=id)
+            {
+                mensaje = "Matricula ya en Base de datos";
+            }
+            else {
+                mensaje = "";
+            }
+            return mensaje;
+        }
+
        // actualizacion
 
     }

@@ -9,7 +9,7 @@ namespace BusinessEntities.Clases
 {
    public class Paciente
     {
-        [Key]/// si no  funciona la quitamos
+        //[Key]/// si no  funciona la quitamos
         public int Id { get; set; }
         public string Nombre_Paciente {get; set;}
         public int Matricula { get;  set; }

@@ -36,24 +36,28 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnModificar = new System.Windows.Forms.Button();
+            this.dgvPacModificar = new System.Windows.Forms.DataGridView();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtBuscarId = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPacModificar)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
-            this.label1.Location = new System.Drawing.Point(12, 32);
+            this.label1.Location = new System.Drawing.Point(95, 132);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 18);
+            this.label1.Size = new System.Drawing.Size(82, 18);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Introducir Matricula";
+            this.label1.Text = "Matricula";
             // 
             // txtMatriculaModificar
             // 
             this.txtMatriculaModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txtMatriculaModificar.Location = new System.Drawing.Point(193, 32);
+            this.txtMatriculaModificar.Location = new System.Drawing.Point(193, 132);
             this.txtMatriculaModificar.Name = "txtMatriculaModificar";
             this.txtMatriculaModificar.Size = new System.Drawing.Size(100, 24);
             this.txtMatriculaModificar.TabIndex = 1;
@@ -82,7 +86,7 @@
             // txtPacienteModificar
             // 
             this.txtPacienteModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txtPacienteModificar.Location = new System.Drawing.Point(193, 79);
+            this.txtPacienteModificar.Location = new System.Drawing.Point(193, 87);
             this.txtPacienteModificar.Name = "txtPacienteModificar";
             this.txtPacienteModificar.Size = new System.Drawing.Size(321, 24);
             this.txtPacienteModificar.TabIndex = 29;
@@ -91,7 +95,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(28, 77);
+            this.label2.Location = new System.Drawing.Point(28, 90);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(149, 18);
             this.label2.TabIndex = 25;
@@ -117,35 +121,64 @@
             this.label4.TabIndex = 28;
             this.label4.Text = "Edad";
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Location = new System.Drawing.Point(299, 36);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(93, 25);
+            this.btnBuscar.TabIndex = 33;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(299, 32);
+            this.btnGuardar.Location = new System.Drawing.Point(556, 126);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(116, 25);
-            this.btnGuardar.TabIndex = 33;
-            this.btnGuardar.Text = "Buscar";
+            this.btnGuardar.Size = new System.Drawing.Size(116, 38);
+            this.btnGuardar.TabIndex = 34;
+            this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // btnModificar
+            // dgvPacModificar
             // 
-            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(556, 126);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(116, 38);
-            this.btnModificar.TabIndex = 34;
-            this.btnModificar.Text = "Guardar";
-            this.btnModificar.UseVisualStyleBackColor = true;
-            this.btnModificar.Click += new System.EventHandler(this.button1_Click);
+            this.dgvPacModificar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPacModificar.Location = new System.Drawing.Point(15, 170);
+            this.dgvPacModificar.Name = "dgvPacModificar";
+            this.dgvPacModificar.Size = new System.Drawing.Size(654, 188);
+            this.dgvPacModificar.TabIndex = 35;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(61, 36);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(116, 18);
+            this.label5.TabIndex = 36;
+            this.label5.Text = "Buscar por Id";
+            // 
+            // txtBuscarId
+            // 
+            this.txtBuscarId.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.txtBuscarId.Location = new System.Drawing.Point(193, 36);
+            this.txtBuscarId.Name = "txtBuscarId";
+            this.txtBuscarId.Size = new System.Drawing.Size(100, 24);
+            this.txtBuscarId.TabIndex = 37;
             // 
             // FrmModificarPac
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(681, 177);
-            this.Controls.Add(this.btnModificar);
+            this.ClientSize = new System.Drawing.Size(681, 370);
+            this.Controls.Add(this.txtBuscarId);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.dgvPacModificar);
             this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.cboSexoM);
             this.Controls.Add(this.txtEdadM);
             this.Controls.Add(this.txtPacienteModificar);
@@ -157,6 +190,7 @@
             this.Name = "FrmModificarPac";
             this.Text = "FrmModificarPac";
             this.Load += new System.EventHandler(this.FrmModificarPac_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPacModificar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,7 +206,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.DataGridView dgvPacModificar;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtBuscarId;
     }
 }
