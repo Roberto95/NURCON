@@ -24,12 +24,27 @@ namespace WindowsApp.Formulario_Nurcon
 
         private void FrmEliminarPac_Load(object sender, EventArgs e)
         {
-
+            txtPacienteEliminar.Enabled = false;
+            txtEdad.Enabled = false;
+            cboSexo.Enabled = false;
+            dgvPacEl.DataSource = BusinessLogicLayer.PacienteBLL.visualizar();
         }
 
-        private void btnGuardar_Click(object sender, EventArgs e)
+        private void btnBuscar_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                //txtMatriculaEliminar.Text = BusinessLogicLayer.PacienteBLL.consultaPormatricula(Convert.ToInt32(txtBuscarId.Text)).ToList()[0].Matricula.ToString();
+                txtPacienteEliminar.Text = BusinessLogicLayer.PacienteBLL.consultaPormatricula(Convert.ToInt32(txtMatriculaEliminar.Text)).ToList()[0].Nombre_Paciente;
+                txtEdad.Text = BusinessLogicLayer.PacienteBLL.consultaPormatricula(Convert.ToInt32(txtMatriculaEliminar.Text)).ToList()[0].Edad.ToString();
+                cboSexo.SelectedItem = BusinessLogicLayer.PacienteBLL.consultaPormatricula(Convert.ToInt32(txtMatriculaEliminar.Text)).ToList()[0].Sexo;
+                
+                
+            }
+            catch
+            {
+                MessageBox.Show("Introducir Id válido de la lista", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
     }
 }

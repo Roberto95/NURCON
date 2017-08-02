@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.cboSexo = new System.Windows.Forms.ComboBox();
             this.txtEdad = new System.Windows.Forms.TextBox();
             this.txtPacienteEliminar = new System.Windows.Forms.TextBox();
@@ -38,6 +38,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtMatriculaEliminar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.dgvPacEl = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPacEl)).BeginInit();
             this.SuspendLayout();
             // 
             // btnEliminar
@@ -51,16 +53,16 @@
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnGuardar
+            // btnBuscar
             // 
-            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(299, 26);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(116, 25);
-            this.btnGuardar.TabIndex = 43;
-            this.btnGuardar.Text = "Buscar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Location = new System.Drawing.Point(299, 26);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(116, 25);
+            this.btnBuscar.TabIndex = 43;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // cboSexo
             // 
@@ -139,13 +141,22 @@
             this.label1.TabIndex = 35;
             this.label1.Text = "Introducir Matricula";
             // 
+            // dgvPacEl
+            // 
+            this.dgvPacEl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPacEl.Location = new System.Drawing.Point(12, 164);
+            this.dgvPacEl.Name = "dgvPacEl";
+            this.dgvPacEl.Size = new System.Drawing.Size(660, 199);
+            this.dgvPacEl.TabIndex = 45;
+            // 
             // FrmEliminarPac
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(689, 180);
+            this.ClientSize = new System.Drawing.Size(689, 375);
+            this.Controls.Add(this.dgvPacEl);
             this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.cboSexo);
             this.Controls.Add(this.txtEdad);
             this.Controls.Add(this.txtPacienteEliminar);
@@ -157,6 +168,7 @@
             this.Name = "FrmEliminarPac";
             this.Text = "FrmEliminarPac";
             this.Load += new System.EventHandler(this.FrmEliminarPac_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPacEl)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,7 +177,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.ComboBox cboSexo;
         private System.Windows.Forms.TextBox txtEdad;
         private System.Windows.Forms.TextBox txtPacienteEliminar;
@@ -174,5 +186,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtMatriculaEliminar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dgvPacEl;
     }
 }
