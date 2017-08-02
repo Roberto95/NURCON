@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.cboSexo = new System.Windows.Forms.ComboBox();
-            this.txtEdad = new System.Windows.Forms.TextBox();
-            this.txtPaciente = new System.Windows.Forms.TextBox();
+            this.txtMatriculaModificar = new System.Windows.Forms.TextBox();
+            this.cboSexoM = new System.Windows.Forms.ComboBox();
+            this.txtEdadM = new System.Windows.Forms.TextBox();
+            this.txtPacienteModificar = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -50,42 +50,42 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Introducir Matricula";
             // 
-            // textBox1
+            // txtMatriculaModificar
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.textBox1.Location = new System.Drawing.Point(193, 32);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 24);
-            this.textBox1.TabIndex = 1;
+            this.txtMatriculaModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.txtMatriculaModificar.Location = new System.Drawing.Point(193, 32);
+            this.txtMatriculaModificar.Name = "txtMatriculaModificar";
+            this.txtMatriculaModificar.Size = new System.Drawing.Size(100, 24);
+            this.txtMatriculaModificar.TabIndex = 1;
             // 
-            // cboSexo
+            // cboSexoM
             // 
-            this.cboSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.cboSexo.FormattingEnabled = true;
-            this.cboSexo.Items.AddRange(new object[] {
+            this.cboSexoM.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboSexoM.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.cboSexoM.FormattingEnabled = true;
+            this.cboSexoM.Items.AddRange(new object[] {
             "F",
             "M"});
-            this.cboSexo.Location = new System.Drawing.Point(613, 79);
-            this.cboSexo.Name = "cboSexo";
-            this.cboSexo.Size = new System.Drawing.Size(59, 26);
-            this.cboSexo.TabIndex = 32;
+            this.cboSexoM.Location = new System.Drawing.Point(613, 79);
+            this.cboSexoM.Name = "cboSexoM";
+            this.cboSexoM.Size = new System.Drawing.Size(59, 26);
+            this.cboSexoM.TabIndex = 32;
             // 
-            // txtEdad
+            // txtEdadM
             // 
-            this.txtEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txtEdad.Location = new System.Drawing.Point(614, 36);
-            this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(58, 24);
-            this.txtEdad.TabIndex = 31;
+            this.txtEdadM.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.txtEdadM.Location = new System.Drawing.Point(614, 36);
+            this.txtEdadM.Name = "txtEdadM";
+            this.txtEdadM.Size = new System.Drawing.Size(58, 24);
+            this.txtEdadM.TabIndex = 31;
             // 
-            // txtPaciente
+            // txtPacienteModificar
             // 
-            this.txtPaciente.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txtPaciente.Location = new System.Drawing.Point(193, 79);
-            this.txtPaciente.Name = "txtPaciente";
-            this.txtPaciente.Size = new System.Drawing.Size(321, 24);
-            this.txtPaciente.TabIndex = 29;
+            this.txtPacienteModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.txtPacienteModificar.Location = new System.Drawing.Point(193, 79);
+            this.txtPacienteModificar.Name = "txtPacienteModificar";
+            this.txtPacienteModificar.Size = new System.Drawing.Size(321, 24);
+            this.txtPacienteModificar.TabIndex = 29;
             // 
             // label2
             // 
@@ -127,30 +127,31 @@
             this.btnGuardar.Text = "Buscar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnModificar
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(556, 126);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 38);
-            this.button1.TabIndex = 34;
-            this.button1.Text = "Guardar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.Location = new System.Drawing.Point(556, 126);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(116, 38);
+            this.btnModificar.TabIndex = 34;
+            this.btnModificar.Text = "Guardar";
+            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmModificarPac
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(681, 177);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.cboSexo);
-            this.Controls.Add(this.txtEdad);
-            this.Controls.Add(this.txtPaciente);
+            this.Controls.Add(this.cboSexoM);
+            this.Controls.Add(this.txtEdadM);
+            this.Controls.Add(this.txtPacienteModificar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtMatriculaModificar);
             this.Controls.Add(this.label1);
             this.Name = "FrmModificarPac";
             this.Text = "FrmModificarPac";
@@ -163,14 +164,14 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox cboSexo;
-        private System.Windows.Forms.TextBox txtEdad;
-        private System.Windows.Forms.TextBox txtPaciente;
+        private System.Windows.Forms.TextBox txtMatriculaModificar;
+        private System.Windows.Forms.ComboBox cboSexoM;
+        private System.Windows.Forms.TextBox txtEdadM;
+        private System.Windows.Forms.TextBox txtPacienteModificar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnModificar;
     }
 }
