@@ -69,9 +69,10 @@ namespace BusinessLogicLayer
             return DataAccessLayer.PacienteDAL.eliminar(matricula);
         }
 
-        public static bool matRepetida(int mat) {
+        public static bool matRepetida(int mat)
+        {
             return DataAccessLayer.PacienteDAL.matRepetida(mat);
-        } 
+        }
 
 
         // actualizacion

@@ -37,6 +37,11 @@ namespace WindowsApp.Formulario_Nurcon
 
             BusinessLogicLayer.PacienteBLL.actualizar(p);
         }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 
 }
