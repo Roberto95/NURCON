@@ -16,5 +16,10 @@ namespace WindowsApp.Formulario_Nurcon
         {
             InitializeComponent();
         }
+
+        private void FrmModificarPac_Load(object sender, EventArgs e)
+        {
+            BusinessLogicLayer.PacienteBLL.eliminar(Convert.ToInt32(txtMatriculaeliminar.Text));
+        }
     }
 }

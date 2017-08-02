@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLogicLayer
 {
-   public class PacienteBLL
+    public class PacienteBLL
     {
         // se agregaron los Paquetes Nugets
         // se creo una lista que viene de business entities y BLL es de consultar
@@ -15,29 +15,29 @@ namespace BusinessLogicLayer
         {
             string mensaje = "";
             //validar que no hay campos vacios
-           
-                //validar que el paciente no se repita
-                bool isExist = DataAccessLayer.PacienteDAL.matRepetida(m.Matricula);
-                if (isExist)
+
+            //validar que el paciente no se repita
+            bool isExist = DataAccessLayer.PacienteDAL.matRepetida(m.Matricula);
+            if (isExist)
+            {
+                mensaje = "Paciente ya registrado";
+            }
+            else
+            {
+                bool isInserted = DataAccessLayer.PacienteDAL.insertar(m);
+                if (isInserted)
                 {
-                    mensaje = "Paciente ya registrado";
+                    mensaje = "";
+
                 }
                 else
                 {
-                    bool isInserted = DataAccessLayer.PacienteDAL.insertar(m);
-                    if (isInserted)
-                    {
-                        mensaje = "";
-
-                    }
-                    else
-                    {
-                        mensaje = "Error de insercion de paciente";
-                    }
-
+                    mensaje = "Error de insercion de paciente";
                 }
 
-            
+            }
+
+
             return mensaje;
         }
 
@@ -59,20 +59,27 @@ namespace BusinessLogicLayer
 
         }
 
-        public static List<Paciente>consultaPorID(int ma)
-        { 
-            return DataAccessLayer.PacienteDAL.consultaPorID(ma);            
+        public static List<Paciente> consultaPorID(int ma)
+        {
+            return DataAccessLayer.PacienteDAL.consultaPorID(ma);
         }
 
-        public static bool eliminar(int matricula )
+        public static bool eliminar(int matricula)
         {
             return DataAccessLayer.PacienteDAL.eliminar(matricula);
         }
 
         public static bool matRepetida(int mat) {
             return DataAccessLayer.PacienteDAL.matRepetida(mat);
+        } 
+
+
+        // actualizacion
+        public static bool actualizar(Paciente p)
+        {
+            return DataAccessLayer.PacienteDAL.actualizar(p);
         }
-        
-       
+       // actualizacion
+
     }
 }

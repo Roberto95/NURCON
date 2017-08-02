@@ -21,5 +21,15 @@ namespace WindowsApp.Formulario_Nurcon
         {
 
         }
+
+        private void FrmEliminarPac_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

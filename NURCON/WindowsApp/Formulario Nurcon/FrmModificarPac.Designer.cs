@@ -154,6 +154,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmModificarPac";
             this.Text = "FrmModificarPac";
+            this.Load += new System.EventHandler(this.FrmModificarPac_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

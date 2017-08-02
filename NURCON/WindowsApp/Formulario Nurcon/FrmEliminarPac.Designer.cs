@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.cboSexo = new System.Windows.Forms.ComboBox();
             this.txtEdad = new System.Windows.Forms.TextBox();
-            this.txtPaciente = new System.Windows.Forms.TextBox();
+            this.txtPacienteEliminar = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtMatriculaEliminar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btnEliminar
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(556, 120);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 38);
-            this.button1.TabIndex = 44;
-            this.button1.Text = "Eliminar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Location = new System.Drawing.Point(556, 120);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(116, 38);
+            this.btnEliminar.TabIndex = 44;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnGuardar
             // 
@@ -60,6 +60,7 @@
             this.btnGuardar.TabIndex = 43;
             this.btnGuardar.Text = "Buscar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // cboSexo
             // 
@@ -82,13 +83,13 @@
             this.txtEdad.Size = new System.Drawing.Size(58, 24);
             this.txtEdad.TabIndex = 41;
             // 
-            // txtPaciente
+            // txtPacienteEliminar
             // 
-            this.txtPaciente.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txtPaciente.Location = new System.Drawing.Point(193, 73);
-            this.txtPaciente.Name = "txtPaciente";
-            this.txtPaciente.Size = new System.Drawing.Size(321, 24);
-            this.txtPaciente.TabIndex = 40;
+            this.txtPacienteEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.txtPacienteEliminar.Location = new System.Drawing.Point(193, 73);
+            this.txtPacienteEliminar.Name = "txtPacienteEliminar";
+            this.txtPacienteEliminar.Size = new System.Drawing.Size(321, 24);
+            this.txtPacienteEliminar.TabIndex = 40;
             // 
             // label2
             // 
@@ -120,13 +121,13 @@
             this.label4.TabIndex = 39;
             this.label4.Text = "Edad";
             // 
-            // textBox1
+            // txtMatriculaEliminar
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.textBox1.Location = new System.Drawing.Point(193, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 24);
-            this.textBox1.TabIndex = 36;
+            this.txtMatriculaEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.txtMatriculaEliminar.Location = new System.Drawing.Point(193, 26);
+            this.txtMatriculaEliminar.Name = "txtMatriculaEliminar";
+            this.txtMatriculaEliminar.Size = new System.Drawing.Size(100, 24);
+            this.txtMatriculaEliminar.TabIndex = 36;
             // 
             // label1
             // 
@@ -143,18 +144,19 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(689, 180);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.cboSexo);
             this.Controls.Add(this.txtEdad);
-            this.Controls.Add(this.txtPaciente);
+            this.Controls.Add(this.txtPacienteEliminar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtMatriculaEliminar);
             this.Controls.Add(this.label1);
             this.Name = "FrmEliminarPac";
             this.Text = "FrmEliminarPac";
+            this.Load += new System.EventHandler(this.FrmEliminarPac_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,15 +164,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.ComboBox cboSexo;
         private System.Windows.Forms.TextBox txtEdad;
-        private System.Windows.Forms.TextBox txtPaciente;
+        private System.Windows.Forms.TextBox txtPacienteEliminar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMatriculaEliminar;
         private System.Windows.Forms.Label label1;
     }
 }
