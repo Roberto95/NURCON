@@ -59,5 +59,8 @@ namespace BusinessLogicLayer
             return DataAccessLayer.DiagnosticoDAL.visualizar();
         }
 
+        public static bool eliminarDiag(int PacId) {
+            return DataAccessLayer.DiagnosticoDAL.eliminar_Diagnostico(PacId);
+        }
     }
 }

@@ -34,6 +34,17 @@ namespace DataAccessLayer
         public static List<Diagnostico> visualizar() {
             return db.Diagnoticos.ToList();
         }
+        public static bool eliminar_Diagnostico(int pacId)
+        {
+            //el single trae la entidad completa con su informacion
+            for (int i=0;i< db.Diagnoticos.Where(d => d.PacienteId == pacId).Count();i++) {
+                var query = db.Diagnoticos.Where(d=>d.PacienteId==pacId).ToList()[i];
+                db.Diagnoticos.Remove(query);
+            }
+            
+            return db.SaveChanges() > 0;
+        }
+
 
     }
 }

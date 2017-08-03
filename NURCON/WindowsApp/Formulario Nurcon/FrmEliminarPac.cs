@@ -18,18 +18,7 @@ namespace WindowsApp.Formulario_Nurcon
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            Paciente elimi = new Paciente();
-            elimi.Nombre_Paciente = txtPacienteEliminar.Text.Trim().ToUpper();
-            elimi.Matricula = ((Convert.ToInt32(txtMatriculaEliminar.Text.ToString().Trim().ToUpper())));
-            elimi.Sexo = cboSexoEliminar.SelectedItem.ToString();
-            elimi.Edad = ((Convert.ToInt32(txtEdadEliminar.Text.ToString().Trim().ToUpper()))); 
-
-            BusinessLogicLayer.PacienteBLL.eliminacion_paciente(Convert.ToInt32(txtMatriculaEliminar.Text));
-
-        }
+        
 
         private void FrmEliminarPac_Load(object sender, EventArgs e)
         {
@@ -52,8 +41,35 @@ namespace WindowsApp.Formulario_Nurcon
             }
             catch
             {
-                MessageBox.Show("Introducir Id válido de la lista", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Introducir matricula válida de la lista", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            try {
+
+                if (MessageBox.Show("¿Está seguro de eliminar al paciente? Se eliminarán todos los diagnosticos asociados", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes) {
+                    int var = BusinessLogicLayer.PacienteBLL.consultaPormatricula(Convert.ToInt32(txtMatriculaEliminar.Text)).ToList()[0].Id;
+                    BusinessLogicLayer.DiagnosticoBLL.eliminarDiag(var);
+                    BusinessLogicLayer.PacienteBLL.eliminacion_paciente(Convert.ToInt32(txtMatriculaEliminar.Text));
+                    txtEdadEliminar.Text = "";
+                    txtMatriculaEliminar.Text = "";
+                    txtPacienteEliminar.Text = "";
+                    cboSexoEliminar.SelectedItem = null;
+                    MessageBox.Show("Paciente y sus diagnósticos eliminado correctamente","Aviso",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                }
+
+
+            }
+            catch
+            {
+                MessageBox.Show("Verifique que no haya espacios en blanco y sea el formato correcto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
+            dgvPacEl.DataSource = null;
+            dgvPacEl.DataSource = BusinessLogicLayer.PacienteBLL.visualizar();
+
         }
     }
 }

@@ -17,15 +17,9 @@ namespace WindowsApp.Formulario_Nurcon
             InitializeComponent();
         }
 
-        private void button9_Click(object sender, EventArgs e)
-        {
+       
 
-        }
-
-        private void Inicio_Load(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void button1_Click(object sender, EventArgs e)
 
@@ -37,33 +31,33 @@ namespace WindowsApp.Formulario_Nurcon
             frmpacientes.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            FrmModificarPac frmModificar = new FrmModificarPac();
-
-            frmModificar.Show();
-        }
+      
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            // aqui vamos a enlazar al formulario de pacientes
-            FrmEliminarPac frmeliminar = new FrmEliminarPac();
+        
 
-            frmeliminar.Show();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-          
-        }
+        
 
         private void btnVisualizar_Click(object sender, EventArgs e)
         {
+            FrmPacientes hist = new FrmPacientes();
+            hist.ShowDialog();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            FrmModificarPac mod = new FrmModificarPac();
+            mod.ShowDialog();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            FrmEliminarPac el = new FrmEliminarPac();
+            el.ShowDialog();
             
         }
     }

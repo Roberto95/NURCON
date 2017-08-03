@@ -102,7 +102,7 @@ namespace WindowsApp.Formulario_Nurcon
                 
             }
             catch {
-                MessageBox.Show("Favor de introducir correctamente la matricula", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Matricula incorrecta o inexistente en base de datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

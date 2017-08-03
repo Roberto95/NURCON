@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdministradorDAL.cs" />
     <Compile Include="DiagnosticoDAL.cs" />
     <Compile Include="PacienteDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

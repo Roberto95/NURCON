@@ -50,7 +50,7 @@
             this.txtEdad = new System.Windows.Forms.TextBox();
             this.txtMatricula = new System.Windows.Forms.TextBox();
             this.txtPaciente = new System.Windows.Forms.TextBox();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tbHistorial = new System.Windows.Forms.TabPage();
             this.btnVerDiag = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
             this.txtVisDiagMat = new System.Windows.Forms.TextBox();
@@ -75,7 +75,7 @@
             this.tcModificar.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.tabPage4.SuspendLayout();
+            this.tbHistorial.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVisualizar)).BeginInit();
             this.tabPage5.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -125,7 +125,7 @@
             // 
             this.tcModificar.Appearance = System.Windows.Forms.TabAppearance.Buttons;
             this.tcModificar.Controls.Add(this.tabPage1);
-            this.tcModificar.Controls.Add(this.tabPage4);
+            this.tcModificar.Controls.Add(this.tbHistorial);
             this.tcModificar.Controls.Add(this.tabPage5);
             this.tcModificar.Location = new System.Drawing.Point(12, 12);
             this.tcModificar.Name = "tcModificar";
@@ -320,21 +320,21 @@
             this.txtPaciente.Size = new System.Drawing.Size(321, 24);
             this.txtPaciente.TabIndex = 5;
             // 
-            // tabPage4
+            // tbHistorial
             // 
-            this.tabPage4.BackColor = System.Drawing.Color.White;
-            this.tabPage4.Controls.Add(this.btnVerDiag);
-            this.tabPage4.Controls.Add(this.label20);
-            this.tabPage4.Controls.Add(this.txtVisDiagMat);
-            this.tabPage4.Controls.Add(this.btnBuscarVisualizar);
-            this.tabPage4.Controls.Add(this.dgvVisualizar);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(771, 468);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Historial de diagnósticos";
-            this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
+            this.tbHistorial.BackColor = System.Drawing.Color.White;
+            this.tbHistorial.Controls.Add(this.btnVerDiag);
+            this.tbHistorial.Controls.Add(this.label20);
+            this.tbHistorial.Controls.Add(this.txtVisDiagMat);
+            this.tbHistorial.Controls.Add(this.btnBuscarVisualizar);
+            this.tbHistorial.Controls.Add(this.dgvVisualizar);
+            this.tbHistorial.Location = new System.Drawing.Point(4, 25);
+            this.tbHistorial.Name = "tbHistorial";
+            this.tbHistorial.Padding = new System.Windows.Forms.Padding(3);
+            this.tbHistorial.Size = new System.Drawing.Size(771, 468);
+            this.tbHistorial.TabIndex = 3;
+            this.tbHistorial.Text = "Historial de diagnósticos";
+            this.tbHistorial.Click += new System.EventHandler(this.tabPage4_Click);
             // 
             // btnVerDiag
             // 
@@ -571,8 +571,8 @@
             this.tabPage1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
+            this.tbHistorial.ResumeLayout(false);
+            this.tbHistorial.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVisualizar)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
@@ -603,7 +603,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtSintomas;
         private System.Windows.Forms.ComboBox cboSexo;
-        internal System.Windows.Forms.TabPage tabPage4;
+        internal System.Windows.Forms.TabPage tbHistorial;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox txtVisDiagMat;
         private System.Windows.Forms.Button btnBuscarVisualizar;

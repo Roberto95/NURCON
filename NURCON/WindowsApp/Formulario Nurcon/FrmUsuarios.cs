@@ -17,16 +17,24 @@ namespace WindowsApp.Formulario_Nurcon
             InitializeComponent();
         }
 
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+             
+
+            if (BusinessLogicLayer.AdministradorBLL.iniciarSesionUs(txtUser.Text)&&BusinessLogicLayer.AdministradorBLL.iniciarSesionPass(txtPassword.Text))
+            {
+                FrmInicio prin = new FrmInicio();
+                prin.ShowDialog();
+                
+            }
+            else {
+                MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
         private void FrmUsuarios_Load(object sender, EventArgs e)
         {
-
+            txtPassword.PasswordChar = '\u25cf';
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-     
     }
 }

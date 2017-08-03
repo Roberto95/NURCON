@@ -72,6 +72,7 @@ namespace WindowsApp.Formulario_Nurcon
 
                     dgvPacModificar.DataSource = null;
                     dgvPacModificar.DataSource = BusinessLogicLayer.PacienteBLL.visualizar();
+                    MessageBox.Show("Actualizado correctamente","Aviso",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 }
             }
             catch {
