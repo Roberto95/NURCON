@@ -46,5 +46,20 @@ namespace WindowsApp.Formulario_Nurcon
         {
             Application.Exit();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            // aqui vamos a enlazar al formulario de pacientes
+            FrmEliminarPac frmeliminar = new FrmEliminarPac();
+
+            frmeliminar.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            FrmModificarPac frmModificar = new FrmModificarPac();
+
+            frmModificar.Show();
+        }
     }
 }

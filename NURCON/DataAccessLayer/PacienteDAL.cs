@@ -47,13 +47,17 @@ namespace DataAccessLayer
         {
             return db.Pacientes.Where(m => m.Id == ma).ToList();
         }
-        public static bool eliminar(int mat)
+
+        // eliminacion
+        public static bool eliminar_Pacientes(int ma)
         {
-            var query = db.Pacientes.Where(p => p.Matricula == mat).Single();//el single trae la entidad completa con su informacion
+            var query =db.Pacientes.Where(p => p.Matricula == ma).Single();//el single trae la entidad completa con su informacion
+
             db.Pacientes.Remove(query);
             return db.SaveChanges() > 0;
         }
-       
+        // eliminacion
+
         public static bool matRepetida(int mat) {
             return db.Pacientes.Where(m => m.Matricula == mat).Count()>0;
         }

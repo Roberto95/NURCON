@@ -30,8 +30,8 @@
         {
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.cboSexo = new System.Windows.Forms.ComboBox();
-            this.txtEdad = new System.Windows.Forms.TextBox();
+            this.cboSexoEliminar = new System.Windows.Forms.ComboBox();
+            this.txtEdadEliminar = new System.Windows.Forms.TextBox();
             this.txtPacienteEliminar = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -64,26 +64,26 @@
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // cboSexo
+            // cboSexoEliminar
             // 
-            this.cboSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.cboSexo.FormattingEnabled = true;
-            this.cboSexo.Items.AddRange(new object[] {
+            this.cboSexoEliminar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboSexoEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.cboSexoEliminar.FormattingEnabled = true;
+            this.cboSexoEliminar.Items.AddRange(new object[] {
             "F",
             "M"});
-            this.cboSexo.Location = new System.Drawing.Point(613, 73);
-            this.cboSexo.Name = "cboSexo";
-            this.cboSexo.Size = new System.Drawing.Size(59, 26);
-            this.cboSexo.TabIndex = 42;
+            this.cboSexoEliminar.Location = new System.Drawing.Point(613, 73);
+            this.cboSexoEliminar.Name = "cboSexoEliminar";
+            this.cboSexoEliminar.Size = new System.Drawing.Size(59, 26);
+            this.cboSexoEliminar.TabIndex = 42;
             // 
-            // txtEdad
+            // txtEdadEliminar
             // 
-            this.txtEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txtEdad.Location = new System.Drawing.Point(614, 30);
-            this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(58, 24);
-            this.txtEdad.TabIndex = 41;
+            this.txtEdadEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.txtEdadEliminar.Location = new System.Drawing.Point(614, 30);
+            this.txtEdadEliminar.Name = "txtEdadEliminar";
+            this.txtEdadEliminar.Size = new System.Drawing.Size(58, 24);
+            this.txtEdadEliminar.TabIndex = 41;
             // 
             // txtPacienteEliminar
             // 
@@ -157,8 +157,8 @@
             this.Controls.Add(this.dgvPacEl);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.cboSexo);
-            this.Controls.Add(this.txtEdad);
+            this.Controls.Add(this.cboSexoEliminar);
+            this.Controls.Add(this.txtEdadEliminar);
             this.Controls.Add(this.txtPacienteEliminar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
@@ -178,8 +178,8 @@
 
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.ComboBox cboSexo;
-        private System.Windows.Forms.TextBox txtEdad;
+        private System.Windows.Forms.ComboBox cboSexoEliminar;
+        private System.Windows.Forms.TextBox txtEdadEliminar;
         private System.Windows.Forms.TextBox txtPacienteEliminar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
