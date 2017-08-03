@@ -36,6 +36,7 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.cboSexo = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtMedicamento = new System.Windows.Forms.TextBox();
             this.txtTipo_sangre = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -50,12 +51,14 @@
             this.txtMatricula = new System.Windows.Forms.TextBox();
             this.txtPaciente = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.btnVerDiag = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
             this.txtVisDiagMat = new System.Windows.Forms.TextBox();
             this.btnBuscarVisualizar = new System.Windows.Forms.Button();
             this.dgvVisualizar = new System.Windows.Forms.DataGridView();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtMedicamentosNDiag = new System.Windows.Forms.TextBox();
             this.txtTipoSangreND = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -69,9 +72,6 @@
             this.label25 = new System.Windows.Forms.Label();
             this.txtMatriculaNR = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.txtMedicamento = new System.Windows.Forms.TextBox();
-            this.btnVerDiag = new System.Windows.Forms.Button();
-            this.txtMedicamentosNDiag = new System.Windows.Forms.TextBox();
             this.tcModificar.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -123,6 +123,7 @@
             // 
             // tcModificar
             // 
+            this.tcModificar.Appearance = System.Windows.Forms.TabAppearance.Buttons;
             this.tcModificar.Controls.Add(this.tabPage1);
             this.tcModificar.Controls.Add(this.tabPage4);
             this.tcModificar.Controls.Add(this.tabPage5);
@@ -144,10 +145,10 @@
             this.tabPage1.Controls.Add(this.lblMatricula);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(771, 471);
+            this.tabPage1.Size = new System.Drawing.Size(771, 468);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Nuevo paciente y diagnóstico";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -185,6 +186,14 @@
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Diagnostico";
+            // 
+            // txtMedicamento
+            // 
+            this.txtMedicamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.txtMedicamento.Location = new System.Drawing.Point(137, 168);
+            this.txtMedicamento.Name = "txtMedicamento";
+            this.txtMedicamento.Size = new System.Drawing.Size(121, 24);
+            this.txtMedicamento.TabIndex = 26;
             // 
             // txtTipo_sangre
             // 
@@ -313,19 +322,30 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.BackColor = System.Drawing.Color.White;
             this.tabPage4.Controls.Add(this.btnVerDiag);
             this.tabPage4.Controls.Add(this.label20);
             this.tabPage4.Controls.Add(this.txtVisDiagMat);
             this.tabPage4.Controls.Add(this.btnBuscarVisualizar);
             this.tabPage4.Controls.Add(this.dgvVisualizar);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(771, 471);
+            this.tabPage4.Size = new System.Drawing.Size(771, 468);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Historial de diagnósticos";
-            this.tabPage4.UseVisualStyleBackColor = true;
             this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
+            // 
+            // btnVerDiag
+            // 
+            this.btnVerDiag.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.btnVerDiag.Location = new System.Drawing.Point(645, 59);
+            this.btnVerDiag.Name = "btnVerDiag";
+            this.btnVerDiag.Size = new System.Drawing.Size(99, 30);
+            this.btnVerDiag.TabIndex = 5;
+            this.btnVerDiag.Text = "Ver todos";
+            this.btnVerDiag.UseVisualStyleBackColor = true;
+            this.btnVerDiag.Click += new System.EventHandler(this.btnVerDiag_Click);
             // 
             // label20
             // 
@@ -371,10 +391,10 @@
             this.tabPage5.Controls.Add(this.label25);
             this.tabPage5.Controls.Add(this.txtMatriculaNR);
             this.tabPage5.Controls.Add(this.label26);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(771, 471);
+            this.tabPage5.Size = new System.Drawing.Size(771, 468);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Nuevo Diagnóstico";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -398,6 +418,14 @@
             this.groupBox2.TabIndex = 36;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Diagnostico";
+            // 
+            // txtMedicamentosNDiag
+            // 
+            this.txtMedicamentosNDiag.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.txtMedicamentosNDiag.Location = new System.Drawing.Point(137, 165);
+            this.txtMedicamentosNDiag.Name = "txtMedicamentosNDiag";
+            this.txtMedicamentosNDiag.Size = new System.Drawing.Size(121, 24);
+            this.txtMedicamentosNDiag.TabIndex = 37;
             // 
             // txtTipoSangreND
             // 
@@ -527,37 +555,11 @@
             this.label26.TabIndex = 26;
             this.label26.Text = "Matricula";
             // 
-            // txtMedicamento
-            // 
-            this.txtMedicamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txtMedicamento.Location = new System.Drawing.Point(137, 168);
-            this.txtMedicamento.Name = "txtMedicamento";
-            this.txtMedicamento.Size = new System.Drawing.Size(121, 24);
-            this.txtMedicamento.TabIndex = 26;
-            // 
-            // btnVerDiag
-            // 
-            this.btnVerDiag.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.btnVerDiag.Location = new System.Drawing.Point(645, 59);
-            this.btnVerDiag.Name = "btnVerDiag";
-            this.btnVerDiag.Size = new System.Drawing.Size(99, 30);
-            this.btnVerDiag.TabIndex = 5;
-            this.btnVerDiag.Text = "Ver todos";
-            this.btnVerDiag.UseVisualStyleBackColor = true;
-            this.btnVerDiag.Click += new System.EventHandler(this.btnVerDiag_Click);
-            // 
-            // txtMedicamentosNDiag
-            // 
-            this.txtMedicamentosNDiag.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txtMedicamentosNDiag.Location = new System.Drawing.Point(137, 165);
-            this.txtMedicamentosNDiag.Name = "txtMedicamentosNDiag";
-            this.txtMedicamentosNDiag.Size = new System.Drawing.Size(121, 24);
-            this.txtMedicamentosNDiag.TabIndex = 37;
-            // 
             // FrmPacientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(804, 522);
             this.Controls.Add(this.tcModificar);
             this.Name = "FrmPacientes";

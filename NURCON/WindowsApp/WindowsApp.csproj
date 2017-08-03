@@ -157,6 +157,7 @@
   <ItemGroup>
     <Content Include="bin\Debug\WindowsApp.vshost.exe" />
     <Content Include="obj\Debug\WindowsApp.csproj.FileListAbsolute.txt" />
+    <None Include="Resources\images.jpg" />
     <None Include="Resources\Doctor_Male_icon-icons.com_75051.png" />
     <None Include="Resources\kim.png" />
     <None Include="Resources\19965104_2099333336960499_517419456_n1.png" />
