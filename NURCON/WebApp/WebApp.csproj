@@ -145,6 +145,12 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="webForms\wfrmEliminarPac.aspx" />
+    <Content Include="webForms\wfrmInicio.aspx" />
+    <Content Include="webForms\wfrmModificarPac.aspx" />
+    <Content Include="webForms\wfrmPacientes.aspx" />
+    <Content Include="webForms\wfrmTelefonos.aspx" />
+    <Content Include="webForms\wfrmUsuarios.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -211,6 +217,48 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="webForms\wfrmEliminarPac.aspx.cs">
+      <DependentUpon>wfrmEliminarPac.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webForms\wfrmEliminarPac.aspx.designer.cs">
+      <DependentUpon>wfrmEliminarPac.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webForms\wfrmInicio.aspx.cs">
+      <DependentUpon>wfrmInicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webForms\wfrmInicio.aspx.designer.cs">
+      <DependentUpon>wfrmInicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webForms\wfrmModificarPac.aspx.cs">
+      <DependentUpon>wfrmModificarPac.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webForms\wfrmModificarPac.aspx.designer.cs">
+      <DependentUpon>wfrmModificarPac.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webForms\wfrmPacientes.aspx.cs">
+      <DependentUpon>wfrmPacientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webForms\wfrmPacientes.aspx.designer.cs">
+      <DependentUpon>wfrmPacientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webForms\wfrmTelefonos.aspx.cs">
+      <DependentUpon>wfrmTelefonos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webForms\wfrmTelefonos.aspx.designer.cs">
+      <DependentUpon>wfrmTelefonos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webForms\wfrmUsuarios.aspx.cs">
+      <DependentUpon>wfrmUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webForms\wfrmUsuarios.aspx.designer.cs">
+      <DependentUpon>wfrmUsuarios.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
