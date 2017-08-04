@@ -53,6 +53,7 @@
             // 
             this.cboSexoEliminar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboSexoEliminar.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboSexoEliminar.ForeColor = System.Drawing.Color.DimGray;
             this.cboSexoEliminar.FormattingEnabled = true;
             this.cboSexoEliminar.Items.AddRange(new object[] {
             "F",
@@ -65,6 +66,7 @@
             // txtEdadEliminar
             // 
             this.txtEdadEliminar.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEdadEliminar.ForeColor = System.Drawing.Color.DimGray;
             this.txtEdadEliminar.Location = new System.Drawing.Point(191, 135);
             this.txtEdadEliminar.Name = "txtEdadEliminar";
             this.txtEdadEliminar.Size = new System.Drawing.Size(58, 24);
@@ -73,6 +75,7 @@
             // txtPacienteEliminar
             // 
             this.txtPacienteEliminar.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPacienteEliminar.ForeColor = System.Drawing.Color.DimGray;
             this.txtPacienteEliminar.Location = new System.Drawing.Point(191, 105);
             this.txtPacienteEliminar.Name = "txtPacienteEliminar";
             this.txtPacienteEliminar.Size = new System.Drawing.Size(321, 24);
@@ -111,6 +114,7 @@
             // txtMatriculaEliminar
             // 
             this.txtMatriculaEliminar.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatriculaEliminar.ForeColor = System.Drawing.Color.DimGray;
             this.txtMatriculaEliminar.Location = new System.Drawing.Point(157, 44);
             this.txtMatriculaEliminar.Name = "txtMatriculaEliminar";
             this.txtMatriculaEliminar.Size = new System.Drawing.Size(118, 24);

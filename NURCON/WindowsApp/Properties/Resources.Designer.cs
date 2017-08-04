@@ -273,6 +273,16 @@ namespace WindowsApp.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap medical_49_icon_icons_com_73913 {
+            get {
+                object obj = ResourceManager.GetObject("medical-49_icon-icons.com_73913", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap medical_57_icon_icons_com_73916 {
             get {
                 object obj = ResourceManager.GetObject("medical-57_icon-icons.com_73916", resourceCulture);
@@ -326,6 +336,16 @@ namespace WindowsApp.Properties {
         internal static System.Drawing.Bitmap sign_delete_icon_34364 {
             get {
                 object obj = ResourceManager.GetObject("sign-delete-icon_34364", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UTE_logo {
+            get {
+                object obj = ResourceManager.GetObject("UTE_logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

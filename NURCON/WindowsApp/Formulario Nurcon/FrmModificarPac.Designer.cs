@@ -65,7 +65,7 @@
             // txtMatriculaModificar
             // 
             this.txtMatriculaModificar.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatriculaModificar.ForeColor = System.Drawing.Color.Gray;
+            this.txtMatriculaModificar.ForeColor = System.Drawing.Color.DimGray;
             this.txtMatriculaModificar.Location = new System.Drawing.Point(132, 153);
             this.txtMatriculaModificar.Name = "txtMatriculaModificar";
             this.txtMatriculaModificar.Size = new System.Drawing.Size(100, 24);
@@ -75,7 +75,7 @@
             // 
             this.cboSexoM.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboSexoM.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboSexoM.ForeColor = System.Drawing.Color.Gray;
+            this.cboSexoM.ForeColor = System.Drawing.Color.DimGray;
             this.cboSexoM.FormattingEnabled = true;
             this.cboSexoM.Items.AddRange(new object[] {
             "F",
@@ -87,8 +87,8 @@
             // 
             // txtEdadM
             // 
-            this.txtEdadM.Font = new System.Drawing.Font("Bell MT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEdadM.ForeColor = System.Drawing.Color.Gray;
+            this.txtEdadM.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEdadM.ForeColor = System.Drawing.Color.DimGray;
             this.txtEdadM.Location = new System.Drawing.Point(287, 154);
             this.txtEdadM.Name = "txtEdadM";
             this.txtEdadM.Size = new System.Drawing.Size(58, 24);
@@ -96,8 +96,8 @@
             // 
             // txtPacienteModificar
             // 
-            this.txtPacienteModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txtPacienteModificar.ForeColor = System.Drawing.Color.Gray;
+            this.txtPacienteModificar.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPacienteModificar.ForeColor = System.Drawing.Color.DimGray;
             this.txtPacienteModificar.Location = new System.Drawing.Point(171, 126);
             this.txtPacienteModificar.Name = "txtPacienteModificar";
             this.txtPacienteModificar.Size = new System.Drawing.Size(321, 24);
@@ -158,8 +158,8 @@
             // 
             // txtBuscarId
             // 
-            this.txtBuscarId.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txtBuscarId.ForeColor = System.Drawing.Color.Gray;
+            this.txtBuscarId.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscarId.ForeColor = System.Drawing.Color.DimGray;
             this.txtBuscarId.Location = new System.Drawing.Point(241, 52);
             this.txtBuscarId.Name = "txtBuscarId";
             this.txtBuscarId.Size = new System.Drawing.Size(100, 24);

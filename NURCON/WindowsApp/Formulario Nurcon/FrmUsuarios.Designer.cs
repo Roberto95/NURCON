@@ -63,6 +63,7 @@
             // txtUser
             // 
             this.txtUser.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUser.ForeColor = System.Drawing.Color.DimGray;
             this.txtUser.Location = new System.Drawing.Point(12, 34);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(112, 24);
@@ -71,6 +72,7 @@
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.ForeColor = System.Drawing.Color.DimGray;
             this.txtPassword.Location = new System.Drawing.Point(12, 85);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(112, 24);
