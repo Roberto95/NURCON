@@ -123,9 +123,29 @@ namespace WindowsApp.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Caduceus_icon_icons_com_75041 {
+            get {
+                object obj = ResourceManager.GetObject("Caduceus_icon-icons.com_75041", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CAM00510 {
             get {
                 object obj = ResourceManager.GetObject("CAM00510", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap descarga {
+            get {
+                object obj = ResourceManager.GetObject("descarga", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -176,6 +196,26 @@ namespace WindowsApp.Properties {
         internal static System.Drawing.Bitmap FireTruck_Left_Red_263461 {
             get {
                 object obj = ResourceManager.GetObject("FireTruck_Left_Red_263461", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap flecha_derecha {
+            get {
+                object obj = ResourceManager.GetObject("flecha-derecha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap folder_icon_icons_com_66076 {
+            get {
+                object obj = ResourceManager.GetObject("folder_icon-icons.com_66076", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -246,6 +286,16 @@ namespace WindowsApp.Properties {
         internal static System.Drawing.Bitmap nurcon {
             get {
                 object obj = ResourceManager.GetObject("nurcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Palomita {
+            get {
+                object obj = ResourceManager.GetObject("Palomita", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

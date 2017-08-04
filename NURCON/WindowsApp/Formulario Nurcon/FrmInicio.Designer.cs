@@ -50,7 +50,7 @@
             // 
             // btnNuevoPaciente
             // 
-            this.btnNuevoPaciente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnNuevoPaciente.BackColor = System.Drawing.Color.MediumAquamarine;
             this.btnNuevoPaciente.BackgroundImage = global::WindowsApp.Properties.Resources.Patient_Male_icon_icons_com_75053;
             this.btnNuevoPaciente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnNuevoPaciente.Font = new System.Drawing.Font("Berlin Sans FB Demi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -65,7 +65,7 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnModificar.BackColor = System.Drawing.Color.MediumAquamarine;
             this.btnModificar.BackgroundImage = global::WindowsApp.Properties.Resources.Patient_Female_icon_icons_com_75052;
             this.btnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnModificar.Font = new System.Drawing.Font("Berlin Sans FB Demi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -80,7 +80,7 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnEliminar.BackColor = System.Drawing.Color.MediumAquamarine;
             this.btnEliminar.BackgroundImage = global::WindowsApp.Properties.Resources.Patient_Female_icon_icons_com_75052;
             this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnEliminar.Font = new System.Drawing.Font("Berlin Sans FB Demi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -123,7 +123,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Berlin Sans FB Demi", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label2.ForeColor = System.Drawing.Color.LightGreen;
             this.label2.Location = new System.Drawing.Point(162, 56);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(262, 40);
@@ -132,7 +132,7 @@
             // 
             // btnTelEmergencias
             // 
-            this.btnTelEmergencias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnTelEmergencias.BackColor = System.Drawing.Color.MediumAquamarine;
             this.btnTelEmergencias.BackgroundImage = global::WindowsApp.Properties.Resources.medical_38_icon_icons_com_73888;
             this.btnTelEmergencias.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnTelEmergencias.Font = new System.Drawing.Font("Berlin Sans FB Demi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -167,7 +167,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.pictureBox3.BackColor = System.Drawing.Color.MediumAquamarine;
             this.pictureBox3.Image = global::WindowsApp.Properties.Resources._1486485588_add_create_new_math_sign_cross_plus_81186;
             this.pictureBox3.Location = new System.Drawing.Point(125, 138);
             this.pictureBox3.Name = "pictureBox3";
@@ -178,7 +178,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.pictureBox4.BackColor = System.Drawing.Color.MediumAquamarine;
             this.pictureBox4.Image = global::WindowsApp.Properties.Resources.sign_delete_icon_34364;
             this.pictureBox4.Location = new System.Drawing.Point(125, 256);
             this.pictureBox4.Name = "pictureBox4";
@@ -189,7 +189,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.pictureBox5.BackColor = System.Drawing.Color.MediumAquamarine;
             this.pictureBox5.Image = global::WindowsApp.Properties.Resources.edit_validated_40458;
             this.pictureBox5.Location = new System.Drawing.Point(486, 129);
             this.pictureBox5.Name = "pictureBox5";
@@ -220,7 +220,6 @@
             this.Controls.Add(this.btnNuevoPaciente);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "FrmInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
