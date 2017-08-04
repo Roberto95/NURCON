@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmModificarPac));
             this.label1 = new System.Windows.Forms.Label();
             this.txtMatriculaModificar = new System.Windows.Forms.TextBox();
             this.cboSexoM = new System.Windows.Forms.ComboBox();
@@ -37,198 +36,144 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.dgvPacModificar = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.txtBuscarId = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPacModificar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(26, 114);
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
+            this.label1.Location = new System.Drawing.Point(95, 132);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 18);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Matricula:";
+            this.label1.Size = new System.Drawing.Size(82, 18);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Matricula";
             // 
             // txtMatriculaModificar
             // 
-            this.txtMatriculaModificar.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatriculaModificar.Location = new System.Drawing.Point(99, 114);
+            this.txtMatriculaModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.txtMatriculaModificar.Location = new System.Drawing.Point(193, 132);
             this.txtMatriculaModificar.Name = "txtMatriculaModificar";
-            this.txtMatriculaModificar.Size = new System.Drawing.Size(100, 25);
-            this.txtMatriculaModificar.TabIndex = 6;
+            this.txtMatriculaModificar.Size = new System.Drawing.Size(100, 24);
+            this.txtMatriculaModificar.TabIndex = 1;
             // 
             // cboSexoM
             // 
             this.cboSexoM.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboSexoM.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboSexoM.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.cboSexoM.FormattingEnabled = true;
             this.cboSexoM.Items.AddRange(new object[] {
             "F",
             "M"});
-            this.cboSexoM.Location = new System.Drawing.Point(398, 114);
+            this.cboSexoM.Location = new System.Drawing.Point(613, 79);
             this.cboSexoM.Name = "cboSexoM";
             this.cboSexoM.Size = new System.Drawing.Size(59, 26);
-            this.cboSexoM.TabIndex = 10;
+            this.cboSexoM.TabIndex = 32;
             // 
             // txtEdadM
             // 
-            this.txtEdadM.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEdadM.Location = new System.Drawing.Point(272, 114);
+            this.txtEdadM.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.txtEdadM.Location = new System.Drawing.Point(614, 36);
             this.txtEdadM.Name = "txtEdadM";
-            this.txtEdadM.Size = new System.Drawing.Size(58, 25);
-            this.txtEdadM.TabIndex = 8;
+            this.txtEdadM.Size = new System.Drawing.Size(58, 24);
+            this.txtEdadM.TabIndex = 31;
             // 
             // txtPacienteModificar
             // 
-            this.txtPacienteModificar.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPacienteModificar.Location = new System.Drawing.Point(158, 74);
+            this.txtPacienteModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.txtPacienteModificar.Location = new System.Drawing.Point(193, 87);
             this.txtPacienteModificar.Name = "txtPacienteModificar";
-            this.txtPacienteModificar.Size = new System.Drawing.Size(321, 25);
-            this.txtPacienteModificar.TabIndex = 4;
+            this.txtPacienteModificar.Size = new System.Drawing.Size(321, 24);
+            this.txtPacienteModificar.TabIndex = 29;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(26, 79);
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(28, 90);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 18);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Nombre completo:";
+            this.label2.Size = new System.Drawing.Size(149, 18);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Nombre completo";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(354, 117);
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(562, 82);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 18);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Sexo:";
+            this.label3.Size = new System.Drawing.Size(47, 18);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "Sexo";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(222, 117);
+            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(560, 39);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 18);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Edad:";
+            this.label4.Size = new System.Drawing.Size(49, 18);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "Edad";
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Location = new System.Drawing.Point(299, 36);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(93, 25);
+            this.btnBuscar.TabIndex = 33;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Location = new System.Drawing.Point(556, 126);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(116, 38);
+            this.btnGuardar.TabIndex = 34;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // dgvPacModificar
             // 
-            this.dgvPacModificar.BackgroundColor = System.Drawing.Color.Brown;
             this.dgvPacModificar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPacModificar.Location = new System.Drawing.Point(15, 170);
             this.dgvPacModificar.Name = "dgvPacModificar";
             this.dgvPacModificar.Size = new System.Drawing.Size(654, 188);
-            this.dgvPacModificar.TabIndex = 11;
+            this.dgvPacModificar.TabIndex = 35;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Berlin Sans FB Demi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(139, 9);
+            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(61, 36);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(191, 23);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Buscar por Matricula:";
+            this.label5.Size = new System.Drawing.Size(116, 18);
+            this.label5.TabIndex = 36;
+            this.label5.Text = "Buscar por Id";
             // 
             // txtBuscarId
             // 
-            this.txtBuscarId.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscarId.Location = new System.Drawing.Point(157, 30);
+            this.txtBuscarId.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.txtBuscarId.Location = new System.Drawing.Point(193, 36);
             this.txtBuscarId.Name = "txtBuscarId";
-            this.txtBuscarId.Size = new System.Drawing.Size(156, 25);
-            this.txtBuscarId.TabIndex = 1;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::WindowsApp.Properties.Resources.Caduceus_icon_icons2;
-            this.pictureBox2.Location = new System.Drawing.Point(41, 8);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(56, 68);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 39;
-            this.pictureBox2.TabStop = false;
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnGuardar.BackgroundImage = global::WindowsApp.Properties.Resources.Palomita;
-            this.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnGuardar.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(511, 114);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(116, 42);
-            this.btnGuardar.TabIndex = 12;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnGuardar.UseVisualStyleBackColor = false;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.Color.White;
-            this.btnBuscar.BackgroundImage = global::WindowsApp.Properties.Resources.descarga;
-            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnBuscar.Font = new System.Drawing.Font("Berlin Sans FB Demi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(336, 17);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(93, 38);
-            this.btnBuscar.TabIndex = 2;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::WindowsApp.Properties.Resources.Patient_Female_icon_icons_com_75052;
-            this.pictureBox5.Location = new System.Drawing.Point(565, 9);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(62, 76);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 41;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::WindowsApp.Properties.Resources.Patient_Male_icon_icons_com_75053;
-            this.pictureBox6.Location = new System.Drawing.Point(509, 8);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(61, 73);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 40;
-            this.pictureBox6.TabStop = false;
+            this.txtBuscarId.Size = new System.Drawing.Size(100, 24);
+            this.txtBuscarId.TabIndex = 37;
             // 
             // FrmModificarPac
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(681, 370);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.txtBuscarId);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dgvPacModificar);
@@ -242,15 +187,10 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtMatriculaModificar);
             this.Controls.Add(this.label1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
             this.Name = "FrmModificarPac";
-            this.Text = "Modificar Paciente";
+            this.Text = "FrmModificarPac";
             this.Load += new System.EventHandler(this.FrmModificarPac_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPacModificar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -271,8 +211,5 @@
         private System.Windows.Forms.DataGridView dgvPacModificar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtBuscarId;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }

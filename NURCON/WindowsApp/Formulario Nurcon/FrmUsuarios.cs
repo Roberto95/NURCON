@@ -23,6 +23,7 @@ namespace WindowsApp.Formulario_Nurcon
 
             if (BusinessLogicLayer.AdministradorBLL.iniciarSesionUs(txtUser.Text)&&BusinessLogicLayer.AdministradorBLL.iniciarSesionPass(txtPassword.Text))
             {
+                this.Hide();
                 FrmInicio prin = new FrmInicio();
                 prin.ShowDialog();
                 
