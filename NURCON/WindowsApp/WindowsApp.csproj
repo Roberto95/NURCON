@@ -166,6 +166,16 @@
   <ItemGroup>
     <Content Include="bin\Debug\WindowsApp.vshost.exe" />
     <Content Include="obj\Debug\WindowsApp.csproj.FileListAbsolute.txt" />
+    <None Include="Resources\sign-delete-icon_34364.png" />
+    <None Include="Resources\edit-validated_40458.png" />
+    <None Include="Resources\1486485588-add-create-new-math-sign-cross-plus_81186.png" />
+    <None Include="Resources\medical-38_icon-icons.com_73888.png" />
+    <None Include="Resources\Patient_Female_icon-icons.com_75052.png" />
+    <None Include="Resources\Patient_Male_icon-icons.com_75053.png" />
+    <None Include="Resources\34418.png" />
+    <None Include="Resources\Doctor_Female_icon-icons.com_75050.png" />
+    <None Include="Resources\nurcon.jpg" />
+    <None Include="Resources\images %281%29.jpg" />
     <None Include="Resources\images1.jpg" />
     <None Include="Resources\FireTruck_Left_Red_263461.png" />
     <None Include="Resources\FireTruck_Left_Red_26346.png" />

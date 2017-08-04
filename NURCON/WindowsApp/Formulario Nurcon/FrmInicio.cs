@@ -60,5 +60,11 @@ namespace WindowsApp.Formulario_Nurcon
             el.ShowDialog();
             
         }
+
+        private void btnTelEmergencias_Click(object sender, EventArgs e)
+        {
+            frmTelefonos tel = new frmTelefonos();
+            tel.ShowDialog();
+        }
     }
 }

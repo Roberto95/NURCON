@@ -88,7 +88,7 @@
             this.label1.Location = new System.Drawing.Point(173, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(137, 18);
-            this.label1.TabIndex = 3;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Cruz Roja Escobedo";
             // 
             // label2
@@ -98,7 +98,7 @@
             this.label2.Location = new System.Drawing.Point(173, 70);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(101, 18);
-            this.label2.TabIndex = 4;
+            this.label2.TabIndex = 2;
             this.label2.Text = "Clinica 43 IMSS";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
@@ -109,7 +109,7 @@
             this.label3.Location = new System.Drawing.Point(173, 98);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 18);
-            this.label3.TabIndex = 5;
+            this.label3.TabIndex = 4;
             this.label3.Text = "Clinica 6 IMSS";
             // 
             // label4
@@ -129,7 +129,7 @@
             this.label5.Location = new System.Drawing.Point(173, 152);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(170, 18);
-            this.label5.TabIndex = 7;
+            this.label5.TabIndex = 8;
             this.label5.Text = "Proteccion Civil Escobedo";
             // 
             // label7
@@ -139,7 +139,7 @@
             this.label7.Location = new System.Drawing.Point(53, 220);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(140, 18);
-            this.label7.TabIndex = 9;
+            this.label7.TabIndex = 10;
             this.label7.Text = "Bomberos Escobedo";
             // 
             // label8
@@ -149,7 +149,7 @@
             this.label8.Location = new System.Drawing.Point(251, 220);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(183, 18);
-            this.label8.TabIndex = 10;
+            this.label8.TabIndex = 12;
             this.label8.Text = "Policia y Transito Escobedo";
             // 
             // label6
@@ -160,7 +160,7 @@
             this.label6.Location = new System.Drawing.Point(316, 41);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(84, 18);
-            this.label6.TabIndex = 11;
+            this.label6.TabIndex = 1;
             this.label6.Text = " 8397-3040";
             // 
             // label9
@@ -171,7 +171,7 @@
             this.label9.Location = new System.Drawing.Point(280, 70);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(80, 18);
-            this.label9.TabIndex = 12;
+            this.label9.TabIndex = 3;
             this.label9.Text = "8397-0990";
             // 
             // label10
@@ -182,7 +182,7 @@
             this.label10.Location = new System.Drawing.Point(272, 98);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(107, 18);
-            this.label10.TabIndex = 13;
+            this.label10.TabIndex = 5;
             this.label10.Text = "01 81 1156 0900";
             // 
             // label11
@@ -193,7 +193,7 @@
             this.label11.Location = new System.Drawing.Point(251, 123);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(119, 18);
-            this.label11.TabIndex = 14;
+            this.label11.TabIndex = 7;
             this.label11.Text = "01 81 4000 2200";
             // 
             // label12
@@ -204,7 +204,7 @@
             this.label12.Location = new System.Drawing.Point(214, 170);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(72, 18);
-            this.label12.TabIndex = 15;
+            this.label12.TabIndex = 9;
             this.label12.Text = "8397-2911 ";
             // 
             // label13
@@ -215,7 +215,7 @@
             this.label13.Location = new System.Drawing.Point(83, 238);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(75, 18);
-            this.label13.TabIndex = 16;
+            this.label13.TabIndex = 11;
             this.label13.Text = "8286-9427";
             // 
             // label14
@@ -226,7 +226,7 @@
             this.label14.Location = new System.Drawing.Point(303, 238);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(80, 18);
-            this.label14.TabIndex = 17;
+            this.label14.TabIndex = 13;
             this.label14.Text = "8286-9200";
             // 
             // frmTelefonos
