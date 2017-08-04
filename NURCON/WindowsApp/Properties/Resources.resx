@@ -127,19 +127,31 @@
   <data name="kim" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="medical-57_icon-icons.com_73916" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\medical-57_icon-icons.com_73916.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="CAM00510" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CAM00510.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="19965104_2099333336960499_517419456_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\19965104_2099333336960499_517419456_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="FireTruck_Left_Red_263461" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FireTruck_Left_Red_263461.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="1959569_1495640907329748_1743433792_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1959569_1495640907329748_1743433792_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FireTruck_Left_Red_26346" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FireTruck_Left_Red_26346.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1621766_1478075662419606_895816425_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1621766_1478075662419606_895816425_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="images1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

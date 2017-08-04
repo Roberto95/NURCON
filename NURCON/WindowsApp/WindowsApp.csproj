@@ -86,6 +86,12 @@
     <Compile Include="Formulario Nurcon\FrmModificarPac.Designer.cs">
       <DependentUpon>FrmModificarPac.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formulario Nurcon\frmTelefonos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario Nurcon\frmTelefonos.Designer.cs">
+      <DependentUpon>frmTelefonos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formulario Nurcon\FrmUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formulario Nurcon\FrmPacientes.resx">
       <DependentUpon>FrmPacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulario Nurcon\frmTelefonos.resx">
+      <DependentUpon>frmTelefonos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulario Nurcon\FrmUsuarios.resx">
       <DependentUpon>FrmUsuarios.cs</DependentUpon>
@@ -157,6 +166,10 @@
   <ItemGroup>
     <Content Include="bin\Debug\WindowsApp.vshost.exe" />
     <Content Include="obj\Debug\WindowsApp.csproj.FileListAbsolute.txt" />
+    <None Include="Resources\images1.jpg" />
+    <None Include="Resources\FireTruck_Left_Red_263461.png" />
+    <None Include="Resources\FireTruck_Left_Red_26346.png" />
+    <None Include="Resources\medical-57_icon-icons.com_73916.png" />
     <None Include="Resources\images.jpg" />
     <None Include="Resources\Doctor_Male_icon-icons.com_75051.png" />
     <None Include="Resources\kim.png" />
