@@ -35,21 +35,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tcModificar = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.cboSexo = new System.Windows.Forms.ComboBox();
-            this.txtEdad = new System.Windows.Forms.TextBox();
-            this.txtMatricula = new System.Windows.Forms.TextBox();
-            this.txtPaciente = new System.Windows.Forms.TextBox();
-            this.tbHistorial = new System.Windows.Forms.TabPage();
-            this.label20 = new System.Windows.Forms.Label();
-            this.txtVisDiagMat = new System.Windows.Forms.TextBox();
-            this.dgvVisualizar = new System.Windows.Forms.DataGridView();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.label25 = new System.Windows.Forms.Label();
-            this.txtMatriculaNR = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cboSexo = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtMedicamento = new System.Windows.Forms.TextBox();
             this.txtTipo_sangre = new System.Windows.Forms.TextBox();
@@ -62,8 +51,19 @@
             this.label8 = new System.Windows.Forms.Label();
             this.cboMotivoVisita = new System.Windows.Forms.ComboBox();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.txtEdad = new System.Windows.Forms.TextBox();
+            this.txtMatricula = new System.Windows.Forms.TextBox();
+            this.txtPaciente = new System.Windows.Forms.TextBox();
+            this.tbHistorial = new System.Windows.Forms.TabPage();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.btnVerDiag = new System.Windows.Forms.Button();
+            this.label20 = new System.Windows.Forms.Label();
+            this.txtVisDiagMat = new System.Windows.Forms.TextBox();
             this.btnBuscarVisualizar = new System.Windows.Forms.Button();
+            this.dgvVisualizar = new System.Windows.Forms.DataGridView();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -79,25 +79,25 @@
             this.label18 = new System.Windows.Forms.Label();
             this.cboMotivoVisitaND = new System.Windows.Forms.ComboBox();
             this.btnGuardarNDiag = new System.Windows.Forms.Button();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.txtMatriculaNR = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
             this.tcModificar.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tbHistorial.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvVisualizar)).BeginInit();
-            this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.tbHistorial.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVisualizar)).BeginInit();
+            this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -177,142 +177,6 @@
             this.tabPage1.Text = "Nuevo paciente y diagnóstico";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // cboSexo
-            // 
-            this.cboSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboSexo.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboSexo.ForeColor = System.Drawing.Color.DimGray;
-            this.cboSexo.FormattingEnabled = true;
-            this.cboSexo.Items.AddRange(new object[] {
-            "F",
-            "M"});
-            this.cboSexo.Location = new System.Drawing.Point(514, 57);
-            this.cboSexo.Name = "cboSexo";
-            this.cboSexo.Size = new System.Drawing.Size(59, 25);
-            this.cboSexo.TabIndex = 7;
-            // 
-            // txtEdad
-            // 
-            this.txtEdad.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEdad.ForeColor = System.Drawing.Color.DimGray;
-            this.txtEdad.Location = new System.Drawing.Point(405, 56);
-            this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(58, 24);
-            this.txtEdad.TabIndex = 5;
-            // 
-            // txtMatricula
-            // 
-            this.txtMatricula.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatricula.ForeColor = System.Drawing.Color.DimGray;
-            this.txtMatricula.Location = new System.Drawing.Point(196, 56);
-            this.txtMatricula.Name = "txtMatricula";
-            this.txtMatricula.Size = new System.Drawing.Size(153, 24);
-            this.txtMatricula.TabIndex = 3;
-            // 
-            // txtPaciente
-            // 
-            this.txtPaciente.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPaciente.ForeColor = System.Drawing.Color.DimGray;
-            this.txtPaciente.Location = new System.Drawing.Point(256, 20);
-            this.txtPaciente.Name = "txtPaciente";
-            this.txtPaciente.Size = new System.Drawing.Size(342, 24);
-            this.txtPaciente.TabIndex = 1;
-            // 
-            // tbHistorial
-            // 
-            this.tbHistorial.BackColor = System.Drawing.Color.White;
-            this.tbHistorial.Controls.Add(this.pictureBox9);
-            this.tbHistorial.Controls.Add(this.pictureBox7);
-            this.tbHistorial.Controls.Add(this.pictureBox8);
-            this.tbHistorial.Controls.Add(this.btnVerDiag);
-            this.tbHistorial.Controls.Add(this.label20);
-            this.tbHistorial.Controls.Add(this.txtVisDiagMat);
-            this.tbHistorial.Controls.Add(this.btnBuscarVisualizar);
-            this.tbHistorial.Controls.Add(this.dgvVisualizar);
-            this.tbHistorial.Location = new System.Drawing.Point(4, 30);
-            this.tbHistorial.Name = "tbHistorial";
-            this.tbHistorial.Padding = new System.Windows.Forms.Padding(3);
-            this.tbHistorial.Size = new System.Drawing.Size(771, 464);
-            this.tbHistorial.TabIndex = 3;
-            this.tbHistorial.Text = "Historial de diagnósticos";
-            this.tbHistorial.Click += new System.EventHandler(this.tabPage4_Click);
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Berlin Sans FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(189, 21);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(260, 21);
-            this.label20.TabIndex = 0;
-            this.label20.Text = "Especificar alumno (matrícula):";
-            // 
-            // txtVisDiagMat
-            // 
-            this.txtVisDiagMat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txtVisDiagMat.ForeColor = System.Drawing.Color.DimGray;
-            this.txtVisDiagMat.Location = new System.Drawing.Point(211, 45);
-            this.txtVisDiagMat.Name = "txtVisDiagMat";
-            this.txtVisDiagMat.Size = new System.Drawing.Size(207, 24);
-            this.txtVisDiagMat.TabIndex = 1;
-            // 
-            // dgvVisualizar
-            // 
-            this.dgvVisualizar.BackgroundColor = System.Drawing.Color.LightGreen;
-            this.dgvVisualizar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvVisualizar.Location = new System.Drawing.Point(55, 139);
-            this.dgvVisualizar.Name = "dgvVisualizar";
-            this.dgvVisualizar.Size = new System.Drawing.Size(674, 279);
-            this.dgvVisualizar.TabIndex = 3;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.pictureBox4);
-            this.tabPage5.Controls.Add(this.pictureBox5);
-            this.tabPage5.Controls.Add(this.pictureBox6);
-            this.tabPage5.Controls.Add(this.groupBox2);
-            this.tabPage5.Controls.Add(this.btnGuardarNDiag);
-            this.tabPage5.Controls.Add(this.label25);
-            this.tabPage5.Controls.Add(this.txtMatriculaNR);
-            this.tabPage5.Controls.Add(this.label26);
-            this.tabPage5.Location = new System.Drawing.Point(4, 30);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(771, 464);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Nuevo Diagnóstico";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Berlin Sans FB Demi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(302, 25);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(191, 23);
-            this.label25.TabIndex = 0;
-            this.label25.Text = "Ingrese  la matricula ";
-            // 
-            // txtMatriculaNR
-            // 
-            this.txtMatriculaNR.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatriculaNR.ForeColor = System.Drawing.Color.DimGray;
-            this.txtMatriculaNR.Location = new System.Drawing.Point(389, 58);
-            this.txtMatriculaNR.Name = "txtMatriculaNR";
-            this.txtMatriculaNR.Size = new System.Drawing.Size(100, 24);
-            this.txtMatriculaNR.TabIndex = 2;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(316, 58);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(67, 18);
-            this.label26.TabIndex = 1;
-            this.label26.Text = "Matricula";
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::WindowsApp.Properties.Resources.Patient_Female_icon_icons_com_75052;
@@ -342,6 +206,20 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 25;
             this.pictureBox1.TabStop = false;
+            // 
+            // cboSexo
+            // 
+            this.cboSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboSexo.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboSexo.ForeColor = System.Drawing.Color.DimGray;
+            this.cboSexo.FormattingEnabled = true;
+            this.cboSexo.Items.AddRange(new object[] {
+            "F",
+            "M"});
+            this.cboSexo.Location = new System.Drawing.Point(514, 57);
+            this.cboSexo.Name = "cboSexo";
+            this.cboSexo.Size = new System.Drawing.Size(59, 25);
+            this.cboSexo.TabIndex = 7;
             // 
             // groupBox1
             // 
@@ -489,13 +367,89 @@
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
+            // txtEdad
+            // 
+            this.txtEdad.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEdad.ForeColor = System.Drawing.Color.DimGray;
+            this.txtEdad.Location = new System.Drawing.Point(405, 56);
+            this.txtEdad.Name = "txtEdad";
+            this.txtEdad.Size = new System.Drawing.Size(58, 24);
+            this.txtEdad.TabIndex = 5;
+            // 
+            // txtMatricula
+            // 
+            this.txtMatricula.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatricula.ForeColor = System.Drawing.Color.DimGray;
+            this.txtMatricula.Location = new System.Drawing.Point(196, 56);
+            this.txtMatricula.Name = "txtMatricula";
+            this.txtMatricula.Size = new System.Drawing.Size(153, 24);
+            this.txtMatricula.TabIndex = 3;
+            // 
+            // txtPaciente
+            // 
+            this.txtPaciente.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPaciente.ForeColor = System.Drawing.Color.DimGray;
+            this.txtPaciente.Location = new System.Drawing.Point(256, 20);
+            this.txtPaciente.Name = "txtPaciente";
+            this.txtPaciente.Size = new System.Drawing.Size(342, 24);
+            this.txtPaciente.TabIndex = 1;
+            // 
+            // tbHistorial
+            // 
+            this.tbHistorial.BackColor = System.Drawing.Color.White;
+            this.tbHistorial.Controls.Add(this.pictureBox9);
+            this.tbHistorial.Controls.Add(this.pictureBox7);
+            this.tbHistorial.Controls.Add(this.pictureBox8);
+            this.tbHistorial.Controls.Add(this.btnVerDiag);
+            this.tbHistorial.Controls.Add(this.label20);
+            this.tbHistorial.Controls.Add(this.txtVisDiagMat);
+            this.tbHistorial.Controls.Add(this.btnBuscarVisualizar);
+            this.tbHistorial.Controls.Add(this.dgvVisualizar);
+            this.tbHistorial.Location = new System.Drawing.Point(4, 30);
+            this.tbHistorial.Name = "tbHistorial";
+            this.tbHistorial.Padding = new System.Windows.Forms.Padding(3);
+            this.tbHistorial.Size = new System.Drawing.Size(771, 464);
+            this.tbHistorial.TabIndex = 3;
+            this.tbHistorial.Text = "Historial de diagnósticos";
+            this.tbHistorial.Click += new System.EventHandler(this.tabPage4_Click);
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::WindowsApp.Properties.Resources.UTE_logo;
+            this.pictureBox9.Location = new System.Drawing.Point(19, 10);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(136, 88);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 53;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::WindowsApp.Properties.Resources.Patient_Female_icon_icons_com_75052;
+            this.pictureBox7.Location = new System.Drawing.Point(572, 8);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(58, 63);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 52;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::WindowsApp.Properties.Resources.Patient_Male_icon_icons_com_75053;
+            this.pictureBox8.Location = new System.Drawing.Point(508, 8);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(58, 63);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 51;
+            this.pictureBox8.TabStop = false;
+            // 
             // btnVerDiag
             // 
             this.btnVerDiag.BackColor = System.Drawing.Color.White;
             this.btnVerDiag.BackgroundImage = global::WindowsApp.Properties.Resources.medical_49_icon_icons_com_73913;
             this.btnVerDiag.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnVerDiag.Font = new System.Drawing.Font("Berlin Sans FB Demi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerDiag.Location = new System.Drawing.Point(626, 50);
+            this.btnVerDiag.Location = new System.Drawing.Point(639, 70);
             this.btnVerDiag.Name = "btnVerDiag";
             this.btnVerDiag.Size = new System.Drawing.Size(90, 63);
             this.btnVerDiag.TabIndex = 4;
@@ -503,6 +457,25 @@
             this.btnVerDiag.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnVerDiag.UseVisualStyleBackColor = false;
             this.btnVerDiag.Click += new System.EventHandler(this.btnVerDiag_Click);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Berlin Sans FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(189, 21);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(260, 21);
+            this.label20.TabIndex = 0;
+            this.label20.Text = "Especificar alumno (matrícula):";
+            // 
+            // txtVisDiagMat
+            // 
+            this.txtVisDiagMat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.txtVisDiagMat.ForeColor = System.Drawing.Color.DimGray;
+            this.txtVisDiagMat.Location = new System.Drawing.Point(211, 45);
+            this.txtVisDiagMat.Name = "txtVisDiagMat";
+            this.txtVisDiagMat.Size = new System.Drawing.Size(207, 24);
+            this.txtVisDiagMat.TabIndex = 1;
             // 
             // btnBuscarVisualizar
             // 
@@ -518,6 +491,34 @@
             this.btnBuscarVisualizar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnBuscarVisualizar.UseVisualStyleBackColor = false;
             this.btnBuscarVisualizar.Click += new System.EventHandler(this.btnBuscarVisualizar_Click);
+            // 
+            // dgvVisualizar
+            // 
+            this.dgvVisualizar.BackgroundColor = System.Drawing.Color.LightGreen;
+            this.dgvVisualizar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvVisualizar.Location = new System.Drawing.Point(55, 139);
+            this.dgvVisualizar.Name = "dgvVisualizar";
+            this.dgvVisualizar.Size = new System.Drawing.Size(674, 279);
+            this.dgvVisualizar.TabIndex = 3;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.pictureBox4);
+            this.tabPage5.Controls.Add(this.pictureBox5);
+            this.tabPage5.Controls.Add(this.pictureBox6);
+            this.tabPage5.Controls.Add(this.groupBox2);
+            this.tabPage5.Controls.Add(this.btnGuardarNDiag);
+            this.tabPage5.Controls.Add(this.label25);
+            this.tabPage5.Controls.Add(this.txtMatriculaNR);
+            this.tabPage5.Controls.Add(this.label26);
+            this.tabPage5.Location = new System.Drawing.Point(4, 30);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(771, 464);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Nuevo Diagnóstico";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
             // 
             // pictureBox4
             // 
@@ -694,35 +695,34 @@
             this.btnGuardarNDiag.UseVisualStyleBackColor = true;
             this.btnGuardarNDiag.Click += new System.EventHandler(this.btnGuardarNDiag_Click);
             // 
-            // pictureBox7
+            // label25
             // 
-            this.pictureBox7.Image = global::WindowsApp.Properties.Resources.Patient_Female_icon_icons_com_75052;
-            this.pictureBox7.Location = new System.Drawing.Point(562, 8);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(58, 63);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 52;
-            this.pictureBox7.TabStop = false;
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Berlin Sans FB Demi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(302, 25);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(191, 23);
+            this.label25.TabIndex = 0;
+            this.label25.Text = "Ingrese  la matricula ";
             // 
-            // pictureBox8
+            // txtMatriculaNR
             // 
-            this.pictureBox8.Image = global::WindowsApp.Properties.Resources.Patient_Male_icon_icons_com_75053;
-            this.pictureBox8.Location = new System.Drawing.Point(508, 8);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(58, 63);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 51;
-            this.pictureBox8.TabStop = false;
+            this.txtMatriculaNR.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatriculaNR.ForeColor = System.Drawing.Color.DimGray;
+            this.txtMatriculaNR.Location = new System.Drawing.Point(389, 58);
+            this.txtMatriculaNR.Name = "txtMatriculaNR";
+            this.txtMatriculaNR.Size = new System.Drawing.Size(100, 24);
+            this.txtMatriculaNR.TabIndex = 2;
             // 
-            // pictureBox9
+            // label26
             // 
-            this.pictureBox9.Image = global::WindowsApp.Properties.Resources.UTE_logo;
-            this.pictureBox9.Location = new System.Drawing.Point(19, 10);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(136, 88);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 53;
-            this.pictureBox9.TabStop = false;
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(316, 58);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(67, 18);
+            this.label26.TabIndex = 1;
+            this.label26.Text = "Matricula";
             // 
             // FrmPacientes
             // 
@@ -740,24 +740,24 @@
             this.tcModificar.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            this.tbHistorial.ResumeLayout(false);
-            this.tbHistorial.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvVisualizar)).EndInit();
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.tbHistorial.ResumeLayout(false);
+            this.tbHistorial.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVisualizar)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
 
         }

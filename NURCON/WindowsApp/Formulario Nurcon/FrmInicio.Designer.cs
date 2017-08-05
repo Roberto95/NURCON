@@ -112,10 +112,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Krinkes Decor PERSONAL USE", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(199, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(197, 62);
+            this.label1.Size = new System.Drawing.Size(225, 42);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bienvenido ";
             // 
@@ -124,7 +124,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Berlin Sans FB Demi", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.LightGreen;
-            this.label2.Location = new System.Drawing.Point(162, 56);
+            this.label2.Location = new System.Drawing.Point(176, 69);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(262, 40);
             this.label2.TabIndex = 1;
@@ -136,7 +136,7 @@
             this.btnTelEmergencias.BackgroundImage = global::WindowsApp.Properties.Resources.medical_38_icon_icons_com_73888;
             this.btnTelEmergencias.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnTelEmergencias.Font = new System.Drawing.Font("Berlin Sans FB Demi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTelEmergencias.Location = new System.Drawing.Point(381, 239);
+            this.btnTelEmergencias.Location = new System.Drawing.Point(380, 240);
             this.btnTelEmergencias.Name = "btnTelEmergencias";
             this.btnTelEmergencias.Size = new System.Drawing.Size(179, 89);
             this.btnTelEmergencias.TabIndex = 5;
@@ -169,7 +169,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.MediumAquamarine;
             this.pictureBox3.Image = global::WindowsApp.Properties.Resources._1486485588_add_create_new_math_sign_cross_plus_81186;
-            this.pictureBox3.Location = new System.Drawing.Point(125, 138);
+            this.pictureBox3.Location = new System.Drawing.Point(163, 129);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(30, 31);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -180,7 +180,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.MediumAquamarine;
             this.pictureBox4.Image = global::WindowsApp.Properties.Resources.sign_delete_icon_34364;
-            this.pictureBox4.Location = new System.Drawing.Point(125, 256);
+            this.pictureBox4.Location = new System.Drawing.Point(163, 251);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(30, 31);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -191,7 +191,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.MediumAquamarine;
             this.pictureBox5.Image = global::WindowsApp.Properties.Resources.edit_validated_40458;
-            this.pictureBox5.Location = new System.Drawing.Point(486, 129);
+            this.pictureBox5.Location = new System.Drawing.Point(518, 129);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(30, 40);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
