@@ -142,6 +142,7 @@
             this.dgvPacModificar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPacModificar.Location = new System.Drawing.Point(18, 197);
             this.dgvPacModificar.Name = "dgvPacModificar";
+            this.dgvPacModificar.ReadOnly = true;
             this.dgvPacModificar.Size = new System.Drawing.Size(654, 188);
             this.dgvPacModificar.TabIndex = 11;
             // 

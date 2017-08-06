@@ -19,23 +19,40 @@ namespace WindowsApp.Formulario_Nurcon
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-             
-
-            if (BusinessLogicLayer.AdministradorBLL.iniciarSesionUs(txtUser.Text)&&BusinessLogicLayer.AdministradorBLL.iniciarSesionPass(txtPassword.Text))
+            if (BusinessLogicLayer.AdministradorBLL.siHayDatos())
             {
-                this.Hide();
-                FrmInicio prin = new FrmInicio();
-                prin.ShowDialog();
-                
+                if (BusinessLogicLayer.AdministradorBLL.iniciarSesionUs(txtUser.Text) && BusinessLogicLayer.AdministradorBLL.iniciarSesionPass(txtPassword.Text))
+                {
+                    this.Hide();
+                    FrmInicio prin = new FrmInicio();
+                    prin.ShowDialog();
+
+                }
+                else
+                {
+                    MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
             }
             else {
-                MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
+                if (txtUser.Text == "admin" && txtPassword.Text == "admin")
+                {
+                    this.Hide();
+                    FrmCambiarDatos cd = new FrmCambiarDatos();
+                    cd.ShowDialog();
+                }
+                else {
+                    MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            } 
+
+            
         }
 
         private void FrmUsuarios_Load(object sender, EventArgs e)
         {
             txtPassword.PasswordChar = '\u25cf';
         }
+
+        
     }
 }

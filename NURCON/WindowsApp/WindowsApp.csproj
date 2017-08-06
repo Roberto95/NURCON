@@ -74,6 +74,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formulario Nurcon\FrmCambiarDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario Nurcon\FrmCambiarDatos.Designer.cs">
+      <DependentUpon>FrmCambiarDatos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formulario Nurcon\FrmEliminarPac.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formulario Nurcon\FrmCambiarDatos.resx">
+      <DependentUpon>FrmCambiarDatos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formulario Nurcon\FrmEliminarPac.resx">
       <DependentUpon>FrmEliminarPac.cs</DependentUpon>
     </EmbeddedResource>

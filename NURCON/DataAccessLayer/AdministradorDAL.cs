@@ -21,5 +21,16 @@ namespace DataAccessLayer
             return db.Administradores.Where(a => a.Password_ == pass).Count() > 0;
         }
 
+        public static List<Administrador> siHayDatos() {
+            return db.Administradores.ToList();
+        }
+
+        public static bool insertar(Administrador a)
+
+        {
+            db.Administradores.Add(a);
+            return db.SaveChanges() > 0;
+        }
+
     }
 }

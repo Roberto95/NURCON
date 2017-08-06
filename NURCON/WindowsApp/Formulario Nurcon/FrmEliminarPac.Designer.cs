@@ -137,6 +137,7 @@
             this.dgvPacEl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPacEl.Location = new System.Drawing.Point(17, 179);
             this.dgvPacEl.Name = "dgvPacEl";
+            this.dgvPacEl.ReadOnly = true;
             this.dgvPacEl.Size = new System.Drawing.Size(660, 199);
             this.dgvPacEl.TabIndex = 9;
             // 
