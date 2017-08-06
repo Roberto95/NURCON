@@ -122,6 +122,7 @@
             this.Name = "FrmCambiarDatos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCambiarDatos";
+            this.Load += new System.EventHandler(this.FrmCambiarDatos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

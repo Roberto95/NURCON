@@ -51,5 +51,11 @@ namespace WindowsApp.Formulario_Nurcon
                 MessageBox.Show("No dejar espacios en blanco", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void FrmCambiarDatos_Load(object sender, EventArgs e)
+        {
+            txtPass.PasswordChar= '\u25cf';
+            txtConfPass.PasswordChar= '\u25cf';
+        }
     }
 }
