@@ -31,22 +31,22 @@ namespace WebApp {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// Control TextBox1.
+        /// Control txtMatriculaEliminar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txtMatriculaEliminar;
         
         /// <summary>
-        /// Control Button1.
+        /// Control btnBuscar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button btnBuscar;
         
         /// <summary>
         /// Control Label3.
@@ -58,13 +58,13 @@ namespace WebApp {
         protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// Control TextBox2.
+        /// Control txtPacienteEliminar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox txtPacienteEliminar;
         
         /// <summary>
         /// Control Label2.
@@ -76,13 +76,13 @@ namespace WebApp {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// Control TextBox3.
+        /// Control txtEdadEliminar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox txtEdadEliminar;
         
         /// <summary>
         /// Control Label4.
@@ -94,30 +94,30 @@ namespace WebApp {
         protected global::System.Web.UI.WebControls.Label Label4;
         
         /// <summary>
-        /// Control TextBox4.
+        /// Control txtSexoEliminar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+        protected global::System.Web.UI.WebControls.TextBox txtSexoEliminar;
         
         /// <summary>
-        /// Control Button2.
+        /// Control btnEliminar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button btnEliminar;
         
         /// <summary>
-        /// Control GridView1.
+        /// Control GVEliminar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.GridView GVEliminar;
     }
 }

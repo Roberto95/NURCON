@@ -31,22 +31,22 @@ namespace WebApp {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// Control TextBox1.
+        /// Control txtBuscarID.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txtBuscarID;
         
         /// <summary>
-        /// Control Button1.
+        /// Control btnBuscarModificar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button btnBuscarModificar;
         
         /// <summary>
         /// Control Label3.
@@ -58,13 +58,13 @@ namespace WebApp {
         protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// Control TextBox2.
+        /// Control txtNombreModificar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox txtNombreModificar;
         
         /// <summary>
         /// Control Label5.
@@ -76,13 +76,13 @@ namespace WebApp {
         protected global::System.Web.UI.WebControls.Label Label5;
         
         /// <summary>
-        /// Control TextBox5.
+        /// Control txtMatModificar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox5;
+        protected global::System.Web.UI.WebControls.TextBox txtMatModificar;
         
         /// <summary>
         /// Control Label2.
@@ -94,13 +94,13 @@ namespace WebApp {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// Control TextBox3.
+        /// Control txtEdadModificar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox txtEdadModificar;
         
         /// <summary>
         /// Control Label4.
@@ -112,30 +112,30 @@ namespace WebApp {
         protected global::System.Web.UI.WebControls.Label Label4;
         
         /// <summary>
-        /// Control TextBox4.
+        /// Control txtSexoModificar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+        protected global::System.Web.UI.WebControls.TextBox txtSexoModificar;
         
         /// <summary>
-        /// Control Button2.
+        /// Control btnGuardarModi.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button btnGuardarModi;
         
         /// <summary>
-        /// Control GridView1.
+        /// Control DGModificar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.GridView DGModificar;
     }
 }

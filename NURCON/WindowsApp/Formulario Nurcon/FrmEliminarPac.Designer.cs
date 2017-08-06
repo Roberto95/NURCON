@@ -71,6 +71,7 @@
             this.txtEdadEliminar.Name = "txtEdadEliminar";
             this.txtEdadEliminar.Size = new System.Drawing.Size(58, 24);
             this.txtEdadEliminar.TabIndex = 6;
+            this.txtEdadEliminar.TextChanged += new System.EventHandler(this.txtEdadEliminar_TextChanged);
             // 
             // txtPacienteEliminar
             // 

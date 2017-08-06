@@ -149,6 +149,7 @@
     <Content Include="inicio.aspx" />
     <Content Include="ModificarPac.aspx" />
     <Content Include="pacientes.aspx" />
+    <Content Include="Telefonos.aspx" />
     <Content Include="Usuarios.aspx" />
     <Content Include="webForms\wfrmEliminarPac.aspx" />
     <Content Include="webForms\wfrmInicio.aspx" />
@@ -250,6 +251,13 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Telefonos.aspx.cs">
+      <DependentUpon>Telefonos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Telefonos.aspx.designer.cs">
+      <DependentUpon>Telefonos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Usuarios.aspx.cs">
       <DependentUpon>Usuarios.aspx</DependentUpon>

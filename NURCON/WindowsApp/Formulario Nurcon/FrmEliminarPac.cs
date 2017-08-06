@@ -71,5 +71,10 @@ namespace WindowsApp.Formulario_Nurcon
             dgvPacEl.DataSource = BusinessLogicLayer.PacienteBLL.visualizar();
 
         }
+
+        private void txtEdadEliminar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

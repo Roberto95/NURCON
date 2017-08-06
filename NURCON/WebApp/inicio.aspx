@@ -31,13 +31,13 @@
              </tr>
              <tr>
                  <td>
-                     <asp:Button ID="Button1" runat="server" Text="Nuevo Paciente / Control de diagnósticos" Width="248px" Height="87px" />
+                     <asp:Button ID="Button1" runat="server" Text="Nuevo Paciente / Control de diagnósticos" Width="248px" Height="87px" OnClick="Button1_Click" />
                 
                       <asp:Button ID="Button2" runat="server" Text="Modificar paciente" Height="84px" Width="231px" OnClick="Button2_Click" />
                 
-                           <asp:Button ID="Button3" runat="server" Text="Eliminar paciente" Width="251px" Height="74px" />
+                           <asp:Button ID="Button3" runat="server" Text="Eliminar paciente" Width="251px" Height="74px" OnClick="Button3_Click" />
                 
-                      <asp:Button ID="Button4" runat="server" Text="Telefonos de Emergencias" Height="75px" Width="229px" CssClass="auto-style2" />
+                      <asp:Button ID="Button4" runat="server" Text="Telefonos de Emergencias" Height="75px" Width="229px" CssClass="auto-style2" OnClick="Button4_Click" />
                      
                       <br />
                      <br />

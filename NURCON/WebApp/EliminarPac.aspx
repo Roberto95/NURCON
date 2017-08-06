@@ -22,16 +22,16 @@
     <table class="auto-style2">
         <tr>
         <td class="auto-style1">
-            <asp:Label ID="Label1" runat="server" Text="Introducir Matricula"></asp:Label><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-              &nbsp;&nbsp;&nbsp;<asp:Button ID="Button1" runat="server" Text="Buscar" Width="75px" />
-&nbsp;<p>   <asp:Label ID="Label3" runat="server" Text="Nombre Completo"></asp:Label><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-                <p>  <asp:Label ID="Label2" runat="server" Text="Edad"></asp:Label><asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
-                 <asp:Label ID="Label4" runat="server" Text="Sexo"></asp:Label><asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+            <asp:Label ID="Label1" runat="server" Text="Introducir Matricula"></asp:Label><asp:TextBox ID="txtMatriculaEliminar" runat="server"></asp:TextBox>
+              &nbsp;&nbsp;&nbsp;<asp:Button ID="btnBuscar" runat="server" Text="Buscar" Width="75px" OnClick="btnBuscar_Click" />
+&nbsp;<p>   <asp:Label ID="Label3" runat="server" Text="Nombre Completo"></asp:Label><asp:TextBox ID="txtPacienteEliminar" runat="server"></asp:TextBox>
+                <p>  <asp:Label ID="Label2" runat="server" Text="Edad"></asp:Label><asp:TextBox ID="txtEdadEliminar" runat="server"></asp:TextBox>
+                 <asp:Label ID="Label4" runat="server" Text="Sexo"></asp:Label><asp:TextBox ID="txtSexoEliminar" runat="server"></asp:TextBox>
               
              &nbsp;
-                    <asp:Button ID="Button2" runat="server" Text="Eliminar" />
+                    <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" OnClick="btnEliminar_Click" />
               
-                    <asp:GridView ID="GridView1" runat="server" Height="100px" Width="602px">
+                    <asp:GridView ID="GVEliminar" runat="server" Height="100px" Width="602px">
                     </asp:GridView>
               
              </td>
