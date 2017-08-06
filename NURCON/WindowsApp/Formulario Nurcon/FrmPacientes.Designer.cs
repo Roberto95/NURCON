@@ -449,7 +449,7 @@
             this.btnVerDiag.BackgroundImage = global::WindowsApp.Properties.Resources.medical_49_icon_icons_com_73913;
             this.btnVerDiag.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnVerDiag.Font = new System.Drawing.Font("Berlin Sans FB Demi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerDiag.Location = new System.Drawing.Point(626, 50);
+            this.btnVerDiag.Location = new System.Drawing.Point(639, 70);
             this.btnVerDiag.Name = "btnVerDiag";
             this.btnVerDiag.Size = new System.Drawing.Size(90, 63);
             this.btnVerDiag.TabIndex = 4;
