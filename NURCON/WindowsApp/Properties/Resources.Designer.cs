@@ -123,6 +123,26 @@ namespace WindowsApp.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _344181 {
+            get {
+                object obj = ResourceManager.GetObject("344181", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _344182 {
+            get {
+                object obj = ResourceManager.GetObject("344182", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Caduceus_icon_icons_com_75041 {
             get {
                 object obj = ResourceManager.GetObject("Caduceus_icon-icons.com_75041", resourceCulture);

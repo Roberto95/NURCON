@@ -96,13 +96,13 @@
             // btnSalir
             // 
             this.btnSalir.BackColor = System.Drawing.Color.Black;
-            this.btnSalir.BackgroundImage = global::WindowsApp.Properties.Resources._34418;
+            this.btnSalir.BackgroundImage = global::WindowsApp.Properties.Resources._344182;
             this.btnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnSalir.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Font = new System.Drawing.Font("Berlin Sans FB Demi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.Location = new System.Drawing.Point(266, 315);
+            this.btnSalir.Location = new System.Drawing.Point(261, 293);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(71, 63);
+            this.btnSalir.Size = new System.Drawing.Size(71, 70);
             this.btnSalir.TabIndex = 6;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -124,7 +124,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Berlin Sans FB Demi", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.LightGreen;
-            this.label2.Location = new System.Drawing.Point(176, 69);
+            this.label2.Location = new System.Drawing.Point(167, 51);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(262, 40);
             this.label2.TabIndex = 1;
