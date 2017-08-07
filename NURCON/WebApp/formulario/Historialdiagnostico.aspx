@@ -21,7 +21,7 @@
                <p>
 <asp:Label ID="Label1" runat="server" Text="Especificar alumno (matrícula):"></asp:Label>
                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-              <asp:Button ID="Button1" runat="server" Text="Button" Width="79px" /> </p>
+              <asp:Button ID="Button1" runat="server" Text="Button" Width="79px" OnClick="Button1_Click" /> </p>
                 <p>
                     &nbsp;</p></center>  
 
