@@ -15,7 +15,7 @@
         <td class="auto-style1">
             <asp:Label ID="Label1" runat="server" Text="Buscar por ID"></asp:Label><asp:TextBox ID="txtBuscarID" runat="server"></asp:TextBox>
               &nbsp;&nbsp;&nbsp;<asp:Button ID="btnBuscarModificar" runat="server" Text="Buscar" Width="75px" Height="35px" OnClick="btnBuscarModificar_Click" />
-&nbsp;<p>   <asp:Label ID="Label3" runat="server" Text="Nombre Completo"></asp:Label><asp:TextBox ID="txtNombreModificar" runat="server"></asp:TextBox>
+&nbsp;<p>   <asp:Label ID="Label3" runat="server" Text="Nombre Completo"></asp:Label><asp:TextBox ID="txtNombreModificar" runat="server" style="height: 22px"></asp:TextBox>
                 <p><asp:Label ID="Label5" runat="server" Text="Matricula"></asp:Label><asp:TextBox ID="txtMatModificar" runat="server"></asp:TextBox>
                       <asp:Label ID="Label2" runat="server" Text="Edad"></asp:Label><asp:TextBox ID="txtEdadModificar" runat="server"></asp:TextBox>
          

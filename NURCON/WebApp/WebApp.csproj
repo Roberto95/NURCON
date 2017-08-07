@@ -43,6 +43,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -76,6 +84,14 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.Entity.6.9.9\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -138,7 +154,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="EliminarPac.aspx" />
+    <Content Include="formulario\EliminarPac.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -146,11 +162,13 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="inicio.aspx" />
-    <Content Include="ModificarPac.aspx" />
-    <Content Include="pacientes.aspx" />
-    <Content Include="Telefonos.aspx" />
-    <Content Include="Usuarios.aspx" />
+    <Content Include="formulario\Historialdiagnostico.aspx" />
+    <Content Include="formulario\inicio.aspx" />
+    <Content Include="formulario\ModificarPac.aspx" />
+    <Content Include="formulario\NuevoDiagnostico.aspx" />
+    <Content Include="formulario\pacientes.aspx" />
+    <Content Include="formulario\Telefonos.aspx" />
+    <Content Include="formulario\Usuarios.aspx" />
     <Content Include="webForms\wfrmEliminarPac.aspx" />
     <Content Include="webForms\wfrmInicio.aspx" />
     <Content Include="webForms\wfrmModificarPac.aspx" />
@@ -213,35 +231,49 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="EliminarPac.aspx.cs">
+    <Compile Include="formulario\EliminarPac.aspx.cs">
       <DependentUpon>EliminarPac.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="EliminarPac.aspx.designer.cs">
+    <Compile Include="formulario\EliminarPac.aspx.designer.cs">
       <DependentUpon>EliminarPac.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formulario\Historialdiagnostico.aspx.cs">
+      <DependentUpon>Historialdiagnostico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formulario\Historialdiagnostico.aspx.designer.cs">
+      <DependentUpon>Historialdiagnostico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formulario\NuevoDiagnostico.aspx.cs">
+      <DependentUpon>NuevoDiagnostico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formulario\NuevoDiagnostico.aspx.designer.cs">
+      <DependentUpon>NuevoDiagnostico.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="inicio.aspx.cs">
+    <Compile Include="formulario\inicio.aspx.cs">
       <DependentUpon>inicio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="inicio.aspx.designer.cs">
+    <Compile Include="formulario\inicio.aspx.designer.cs">
       <DependentUpon>inicio.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ModificarPac.aspx.cs">
+    <Compile Include="formulario\ModificarPac.aspx.cs">
       <DependentUpon>ModificarPac.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ModificarPac.aspx.designer.cs">
+    <Compile Include="formulario\ModificarPac.aspx.designer.cs">
       <DependentUpon>ModificarPac.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pacientes.aspx.cs">
+    <Compile Include="formulario\pacientes.aspx.cs">
       <DependentUpon>pacientes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pacientes.aspx.designer.cs">
+    <Compile Include="formulario\pacientes.aspx.designer.cs">
       <DependentUpon>pacientes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -252,18 +284,18 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
-    <Compile Include="Telefonos.aspx.cs">
+    <Compile Include="formulario\Telefonos.aspx.cs">
       <DependentUpon>Telefonos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Telefonos.aspx.designer.cs">
+    <Compile Include="formulario\Telefonos.aspx.designer.cs">
       <DependentUpon>Telefonos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Usuarios.aspx.cs">
+    <Compile Include="formulario\Usuarios.aspx.cs">
       <DependentUpon>Usuarios.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Usuarios.aspx.designer.cs">
+    <Compile Include="formulario\Usuarios.aspx.designer.cs">
       <DependentUpon>Usuarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="webForms\wfrmEliminarPac.aspx.cs">
