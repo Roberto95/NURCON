@@ -152,7 +152,7 @@
             this.dgvPacEl.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvPacEl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightGreen;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DimGray;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ButtonShadow;
@@ -245,6 +245,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtMatriculaEliminar);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmEliminarPac";
