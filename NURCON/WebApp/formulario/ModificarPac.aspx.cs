@@ -22,12 +22,14 @@ namespace WebApp
                 txtBuscarID.Text = BusinessLogicLayer.PacienteBLL.consultaPorID(Convert.ToInt32(txtBuscarID.Text)).ToList()[0].Matricula.ToString();
                 txtNombreModificar.Text = BusinessLogicLayer.PacienteBLL.consultaPorID(Convert.ToInt32(txtBuscarID.Text)).ToList()[0].Nombre_Paciente;
                 txtEdadModificar.Text = BusinessLogicLayer.PacienteBLL.consultaPorID(Convert.ToInt32(txtBuscarID.Text)).ToList()[0].Edad.ToString();
-              //cboSexoM.SelectedItem = BusinessLogicLayer.PacienteBLL.consultaPorID(Convert.ToInt32(txtBuscarID.Text)).ToList()[0].Sexo;
+              cboSexoM.SelectedItem.Text= BusinessLogicLayer.PacienteBLL.consultaPorID(Convert.ToInt32(txtBuscarID.Text)).ToList()[0].Sexo;
                 txtBuscarID.Enabled = false;
             }
             catch
             {
-                Response.Write("ERROR");
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert('Introducir Id válido de la lista Aviso');</script>");
+
+                //Response.Write("ERROR");
 
             }
         }
@@ -50,7 +52,9 @@ namespace WebApp
 
                 if (!string.IsNullOrEmpty(mensaje))
                 {
-                      Response.Write("ERROR");
+                    Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert('Error');</script>");
+
+                  //  Response.Write("ERROR");
                 }
                 else
                 {
@@ -58,7 +62,7 @@ namespace WebApp
                     p.Id = Convert.ToInt32(txtBuscarID.Text);
                     p.Matricula = ((Convert.ToInt32(txtMatModificar.Text.ToString().Trim())));
                     p.Nombre_Paciente = txtNombreModificar.Text.Trim().ToUpper();
-                   // p.Sexo = cboSexoM.SelectedItem.ToString();
+                    p.Sexo = cboSexoM.SelectedItem.ToString();
                     p.Edad = ((Convert.ToInt32(txtEdadModificar.Text.ToString().Trim().ToUpper())));
 
                     BusinessLogicLayer.PacienteBLL.actualizar(p);
@@ -69,17 +73,21 @@ namespace WebApp
                     txtEdadModificar.Text = "";
                     txtMatModificar.Text = "";
                     txtNombreModificar.Text = "";
-                    // cboSexoM.SelectedItem = null;
+                    cboSexoM.SelectedItem.Text = null;
 
                     DGModificar.DataSource = null;
                     DGModificar.DataSource = BusinessLogicLayer.PacienteBLL.visualizar();
-                    Response.Write("ERROR");
+                    // Response.Write("ERROR");
                     //MessageBox.Show("Actualizado correctamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert('Actualizacion correcta');</script>");
+
                 }
             }
             catch
             {
-                Response.Write("ERROR");
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert('Campo vacios utiice otro formato');</script>");
+
+                //Response.Write("ERROR");
                 //MessageBox.Show("Verificar que no haya campos vacíos o utilice el formato correcto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
