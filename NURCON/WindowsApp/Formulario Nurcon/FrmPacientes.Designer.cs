@@ -504,6 +504,7 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.BackColor = System.Drawing.Color.White;
             this.tabPage5.Controls.Add(this.pictureBox4);
             this.tabPage5.Controls.Add(this.pictureBox5);
             this.tabPage5.Controls.Add(this.pictureBox6);
@@ -518,7 +519,6 @@
             this.tabPage5.Size = new System.Drawing.Size(771, 464);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Nuevo Diagnóstico";
-            this.tabPage5.UseVisualStyleBackColor = true;
             this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
             // 
             // pictureBox4
@@ -735,7 +735,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmPacientes";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pacientes";
             this.Load += new System.EventHandler(this.FrmPacientes_Load);
             this.tcModificar.ResumeLayout(false);

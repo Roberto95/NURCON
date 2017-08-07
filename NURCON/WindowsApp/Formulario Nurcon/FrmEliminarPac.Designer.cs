@@ -225,6 +225,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmEliminarPac";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Eliminar Paciente";
             this.Load += new System.EventHandler(this.FrmEliminarPac_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPacEl)).EndInit();

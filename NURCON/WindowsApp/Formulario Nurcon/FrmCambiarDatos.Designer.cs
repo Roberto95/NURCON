@@ -126,12 +126,12 @@
             this.btnAceptar.BackgroundImage = global::WindowsApp.Properties.Resources.Palomita;
             this.btnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAceptar.Font = new System.Drawing.Font("Berlin Sans FB Demi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptar.Location = new System.Drawing.Point(156, 241);
+            this.btnAceptar.Location = new System.Drawing.Point(168, 241);
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(136, 42);
+            this.btnAceptar.Size = new System.Drawing.Size(91, 42);
             this.btnAceptar.TabIndex = 7;
-            this.btnAceptar.Text = "Guardar y Salir";
+            this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAceptar.UseVisualStyleBackColor = false;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);

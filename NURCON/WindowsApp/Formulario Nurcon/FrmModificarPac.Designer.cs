@@ -251,6 +251,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmModificarPac";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar Paciente";
             this.Load += new System.EventHandler(this.FrmModificarPac_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPacModificar)).EndInit();
