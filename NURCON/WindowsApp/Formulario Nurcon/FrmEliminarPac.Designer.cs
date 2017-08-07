@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEliminarPac));
             this.cboSexoEliminar = new System.Windows.Forms.ComboBox();
             this.txtEdadEliminar = new System.Windows.Forms.TextBox();
@@ -134,7 +135,20 @@
             // 
             // dgvPacEl
             // 
+            this.dgvPacEl.AllowUserToAddRows = false;
+            this.dgvPacEl.AllowUserToDeleteRows = false;
+            this.dgvPacEl.AllowUserToResizeColumns = false;
+            this.dgvPacEl.AllowUserToResizeRows = false;
+            this.dgvPacEl.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPacEl.BackgroundColor = System.Drawing.Color.LightGreen;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightGreen;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ButtonShadow;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPacEl.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvPacEl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPacEl.Location = new System.Drawing.Point(17, 179);
             this.dgvPacEl.Name = "dgvPacEl";
