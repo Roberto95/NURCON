@@ -138,6 +138,7 @@
             // 
             // dgvPacModificar
             // 
+            this.dgvPacModificar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPacModificar.BackgroundColor = System.Drawing.Color.LightGreen;
             this.dgvPacModificar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPacModificar.Location = new System.Drawing.Point(18, 197);
