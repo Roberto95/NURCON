@@ -20,8 +20,8 @@
             <center>  
                <p>
 <asp:Label ID="Label1" runat="server" Text="Especificar alumno (matrícula):"></asp:Label>
-                   <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-              <asp:Button ID="Button1" runat="server" Text="Button" Width="79px" OnClick="Button1_Click" /> </p>
+                   <asp:TextBox ID="txtMat" runat="server"></asp:TextBox>
+                </p>
                 <p>
                     &nbsp;</p></center>  
 

@@ -9,6 +9,7 @@
     <style type="text/css">
         .auto-style1 {
             height: 52px;
+            margin-left: 40px;
         }
         .auto-style2 {
             height: 78px;
@@ -24,9 +25,9 @@
          <table class="auto-style2">
         <tr>
         <td class="auto-style1">
-            <asp:Label ID="Label1" runat="server" Text="Usuario"></asp:Label><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <asp:Label ID="Label1" runat="server" Text="Usuario"></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txtUser" runat="server"></asp:TextBox>
                         <br />
-                        <asp:Label ID="Label2" runat="server" Text="Contraseña"></asp:Label><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                        <asp:Label ID="Label2" runat="server" Text="Contraseña"></asp:Label>&nbsp; <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
             <br />
             <asp:Button ID="Button1" runat="server" Text="Entrar" CssClass="auto-style3" Width="77px" OnClick="Button1_Click" />
               

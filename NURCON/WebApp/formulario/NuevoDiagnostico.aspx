@@ -23,7 +23,7 @@
             <tr>
                 <td>
                     <asp:Panel ID="Panel1" runat="server" Height="186px">
-                        <asp:Label ID="Label5" runat="server" Text="Diagnostico"></asp:Label>
+                        <asp:Label ID="Label5" runat="server" Text="Tipo de sangre"></asp:Label>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:TextBox ID="txtTipoSangreND" runat="server"></asp:TextBox>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

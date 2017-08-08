@@ -26,7 +26,10 @@
               &nbsp;&nbsp;&nbsp;<asp:Button ID="btnBuscar" runat="server" Text="Buscar" Width="75px" OnClick="btnBuscar_Click" Height="35px" />
 &nbsp;<p>   <asp:Label ID="Label3" runat="server" Text="Nombre Completo"></asp:Label><asp:TextBox ID="txtPacienteEliminar" runat="server"></asp:TextBox>
                 <p>  <asp:Label ID="Label2" runat="server" Text="Edad"></asp:Label><asp:TextBox ID="txtEdadEliminar" runat="server"></asp:TextBox>
-                 <asp:Label ID="Label4" runat="server" Text="Sexo"></asp:Label><asp:DropDownList ID="cboSexoEliminar" runat="server"></asp:DropDownList>
+                 <asp:Label ID="Label4" runat="server" Text="Sexo"></asp:Label><asp:DropDownList ID="cboSexoEliminar" runat="server">
+                        <asp:ListItem>M</asp:ListItem>
+                        <asp:ListItem>F</asp:ListItem>
+                    </asp:DropDownList>
                     
               
              &nbsp;

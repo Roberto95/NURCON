@@ -33,7 +33,7 @@ namespace WindowsApp.Formulario_Nurcon
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-
+            string mensaje;
             try
             {
                 
@@ -42,7 +42,8 @@ namespace WindowsApp.Formulario_Nurcon
                     m.Matricula = ((Convert.ToInt32(txtMatricula.Text.ToString().Trim().ToUpper())));
                     m.Sexo = cboSexo.SelectedItem.ToString();
                     m.Edad = ((Convert.ToInt32(txtEdad.Text.ToString().Trim().ToUpper())));
-                    string mensaje = BusinessLogicLayer.PacienteBLL.insertar(m);
+                    //mensaje = BusinessLogicLayer.PacienteBLL.insertar(m);
+                    mensaje = BusinessLogicLayer.PacienteBLL.insertarPorCommand(m);
 
 
                     //----------------------------------------

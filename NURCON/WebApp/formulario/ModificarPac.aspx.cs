@@ -12,17 +12,19 @@ namespace WebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
+            DGModificar.DataSource = BusinessLogicLayer.PacienteBLL.visualizar();
+            DGModificar.DataBind();
         }
 
         protected void btnBuscarModificar_Click(object sender, EventArgs e)
         {
              try
             {
-                txtBuscarID.Text = BusinessLogicLayer.PacienteBLL.consultaPorID(Convert.ToInt32(txtBuscarID.Text)).ToList()[0].Matricula.ToString();
+                txtMatModificar.Text = BusinessLogicLayer.PacienteBLL.consultaPorID(Convert.ToInt32(txtBuscarID.Text)).ToList()[0].Matricula.ToString();
                 txtNombreModificar.Text = BusinessLogicLayer.PacienteBLL.consultaPorID(Convert.ToInt32(txtBuscarID.Text)).ToList()[0].Nombre_Paciente;
                 txtEdadModificar.Text = BusinessLogicLayer.PacienteBLL.consultaPorID(Convert.ToInt32(txtBuscarID.Text)).ToList()[0].Edad.ToString();
-              cboSexoM.SelectedItem.Text= BusinessLogicLayer.PacienteBLL.consultaPorID(Convert.ToInt32(txtBuscarID.Text)).ToList()[0].Sexo;
+                cboSexoM.SelectedItem.Text= BusinessLogicLayer.PacienteBLL.consultaPorID(Convert.ToInt32(txtBuscarID.Text)).ToList()[0].Sexo;
                 txtBuscarID.Enabled = false;
             }
             catch
@@ -43,6 +45,7 @@ namespace WebApp
 
             try
             {
+
                 string mensaje = "";
                 if (BusinessLogicLayer.PacienteBLL.matRepetida(Convert.ToInt32(txtMatModificar.Text)))
                 {
@@ -80,7 +83,9 @@ namespace WebApp
                     // Response.Write("ERROR");
                     //MessageBox.Show("Actualizado correctamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert('Actualizacion correcta');</script>");
-
+                    DGModificar.DataSource = null;
+                    DGModificar.DataSource = BusinessLogicLayer.PacienteBLL.visualizar();
+                    DGModificar.DataBind();
                 }
             }
             catch

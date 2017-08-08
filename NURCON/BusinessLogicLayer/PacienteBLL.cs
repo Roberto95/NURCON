@@ -11,6 +11,8 @@ namespace BusinessLogicLayer
     {
         // se agregaron los Paquetes Nugets
         // se creo una lista que viene de business entities y BLL es de consultar
+
+            //metodo de insertar por LinQ
         public static string insertar(Paciente m)
         {
             string mensaje = "";
@@ -41,17 +43,18 @@ namespace BusinessLogicLayer
             return mensaje;
         }
 
+        //metodo de insertar por Command
+        public static string insertarPorCommand(Paciente p) {
+            return DataAccessLayer.PacienteDAL.insertarPorCommand(p);
+        }
+
+        //metodo para consultar lista de todos los pacientes por LinQ
         public static List<Paciente> visualizar()
         {
             return DataAccessLayer.PacienteDAL.consulta();
         }
 
-        public static List<Paciente> busquedaNombre(string nom)
-        {
-            return DataAccessLayer.PacienteDAL.consultaPorNombre(nom);
-
-
-        }
+        //metodo para consultar a los pacientes por medio de la matricula
         public static List<Paciente> consultaPormatricula(int mat)
         {
             return DataAccessLayer.PacienteDAL.consultaPormatricula(mat);
@@ -59,26 +62,30 @@ namespace BusinessLogicLayer
 
         }
 
+        //metodo para consultar a los pacientes por medio del ID
         public static List<Paciente> consultaPorID(int ma)
         {
             return DataAccessLayer.PacienteDAL.consultaPorID(ma);
         }
 
+        //metodo para eliminar un paciente por medio de la matricua
         public static bool eliminacion_paciente(int matricula)
         {
-            return DataAccessLayer.PacienteDAL.eliminar_Pacientes(matricula);
+            return DataAccessLayer.PacienteDAL.eliminarPorCommand(matricula);
+            //return DataAccessLayer.PacienteDAL.eliminar_Pacientes(matricula);
         }
 
+        //metodo para ver si la matricula se repite en la base de datos
         public static bool matRepetida(int mat)
         {
             return DataAccessLayer.PacienteDAL.matRepetida(mat);
         }
 
 
-        // actualizacion
+        //metodo de actualizacion
         public static bool actualizar(Paciente p)
         {
-            return DataAccessLayer.PacienteDAL.actualizarDos(p);
+            return DataAccessLayer.PacienteDAL.actualizar(p);
         }
 
         public static string actualizarMat(int mat,int id) {

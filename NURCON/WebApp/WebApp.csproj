@@ -154,6 +154,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="formulario\cambiarDatos.aspx" />
     <Content Include="formulario\EliminarPac.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -230,6 +231,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formulario\cambiarDatos.aspx.cs">
+      <DependentUpon>cambiarDatos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formulario\cambiarDatos.aspx.designer.cs">
+      <DependentUpon>cambiarDatos.aspx</DependentUpon>
     </Compile>
     <Compile Include="formulario\EliminarPac.aspx.cs">
       <DependentUpon>EliminarPac.aspx</DependentUpon>

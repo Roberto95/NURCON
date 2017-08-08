@@ -18,24 +18,24 @@ namespace WebApp
         {
             // aqui vamos a enlazar al formulario de pacientes
            
-            Server.Transfer("pacientes.aspx", true);
+            Response.Redirect("pacientes.aspx", true);
         }
 
         protected void Button2_Click(object sender, EventArgs e)
         {
 
-            Server.Transfer("ModificarPac.aspx", true);
+            Response.Redirect("ModificarPac.aspx", true);
         }
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-            Server.Transfer("EliminarPac.aspx", true);
+            Response.Redirect("EliminarPac.aspx", true);
 
         }
 
         protected void Button4_Click(object sender, EventArgs e)
         {
-            Server.Transfer("Telefonos.aspx", true);
+            Response.Redirect("Telefonos.aspx", true);
 
         }
     }

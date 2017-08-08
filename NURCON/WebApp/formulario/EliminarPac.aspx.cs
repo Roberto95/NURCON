@@ -11,7 +11,11 @@ namespace WebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            txtPacienteEliminar.Enabled = false;
+            cboSexoEliminar.Enabled = false;
+            txtEdadEliminar.Enabled = false;
+            GVEliminar.DataSource = BusinessLogicLayer.PacienteBLL.visualizar();
+            GVEliminar.DataBind();
         }
 
         protected void btnBuscar_Click(object sender, EventArgs e)
@@ -22,7 +26,8 @@ namespace WebApp
                 txtPacienteEliminar.Text = BusinessLogicLayer.PacienteBLL.consultaPormatricula(Convert.ToInt32(txtMatriculaEliminar.Text)).ToList()[0].Nombre_Paciente;
                 txtEdadEliminar.Text = BusinessLogicLayer.PacienteBLL.consultaPormatricula(Convert.ToInt32(txtMatriculaEliminar.Text)).ToList()[0].Edad.ToString();
                 cboSexoEliminar.SelectedItem.Text = BusinessLogicLayer.PacienteBLL.consultaPormatricula(Convert.ToInt32(txtMatriculaEliminar.Text)).ToList()[0].Sexo;
-               // cboSexoEliminar.SelectedItem.Selected}
+                
+                // cboSexoEliminar.SelectedItem.Selected}
 
             }
             catch
@@ -47,8 +52,9 @@ namespace WebApp
                     txtEdadEliminar.Text = "";
                     txtMatriculaEliminar.Text = "";
                     txtPacienteEliminar.Text = "";
-                    //cboSexoEliminar.SelectedItem = null;
-                    Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert('Paciente Eliminado');</script>");
+               
+                //cboSexoEliminar.SelectedItem = null;
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert('Paciente Eliminado');</script>");
                     //Response.Write("error");
                     // MessageBox.Show("Paciente y sus diagnósticos eliminado correctamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 
@@ -64,6 +70,7 @@ namespace WebApp
 
             GVEliminar.DataSource = null;
             GVEliminar.DataSource = BusinessLogicLayer.PacienteBLL.visualizar();
+            GVEliminar.DataBind();
         }
     }
     }
