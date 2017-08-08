@@ -22,6 +22,15 @@ namespace WebApp {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// Control Image1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image1;
+        
+        /// <summary>
         /// Control Label1.
         /// </summary>
         /// <remarks>
@@ -94,13 +103,22 @@ namespace WebApp {
         protected global::System.Web.UI.WebControls.DropDownList cboSexo;
         
         /// <summary>
-        /// Control Panel1.
+        /// Control Image2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel1;
+        protected global::System.Web.UI.WebControls.Image Image2;
+        
+        /// <summary>
+        /// Control Image3.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image3;
         
         /// <summary>
         /// Control Label5.
@@ -112,6 +130,15 @@ namespace WebApp {
         protected global::System.Web.UI.WebControls.Label Label5;
         
         /// <summary>
+        /// Control Label10.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label10;
+        
+        /// <summary>
         /// Control txtTipo_sangre.
         /// </summary>
         /// <remarks>
@@ -121,13 +148,13 @@ namespace WebApp {
         protected global::System.Web.UI.WebControls.TextBox txtTipo_sangre;
         
         /// <summary>
-        /// Control Label6.
+        /// Control Label11.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label6;
+        protected global::System.Web.UI.WebControls.Label Label11;
         
         /// <summary>
         /// Control txtSintomas.
@@ -139,13 +166,13 @@ namespace WebApp {
         protected global::System.Web.UI.WebControls.TextBox txtSintomas;
         
         /// <summary>
-        /// Control Label7.
+        /// Control Label12.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label7;
+        protected global::System.Web.UI.WebControls.Label Label12;
         
         /// <summary>
         /// Control cboMotivoVisita.
@@ -157,13 +184,22 @@ namespace WebApp {
         protected global::System.Web.UI.WebControls.DropDownList cboMotivoVisita;
         
         /// <summary>
-        /// Control Label8.
+        /// Control Image4.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label8;
+        protected global::System.Web.UI.WebControls.Image Image4;
+        
+        /// <summary>
+        /// Control Label13.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label13;
         
         /// <summary>
         /// Control txtMedicamento.
@@ -175,13 +211,13 @@ namespace WebApp {
         protected global::System.Web.UI.WebControls.TextBox txtMedicamento;
         
         /// <summary>
-        /// Control Label9.
+        /// Control Label14.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label9;
+        protected global::System.Web.UI.WebControls.Label Label14;
         
         /// <summary>
         /// Control txtNotas.

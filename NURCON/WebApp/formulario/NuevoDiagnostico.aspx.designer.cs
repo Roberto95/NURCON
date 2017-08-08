@@ -22,6 +22,15 @@ namespace WebApp.formulario {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// Control Image1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image1;
+        
+        /// <summary>
         /// Control Label1.
         /// </summary>
         /// <remarks>
@@ -40,13 +49,31 @@ namespace WebApp.formulario {
         protected global::System.Web.UI.WebControls.TextBox txtMatriculaNR;
         
         /// <summary>
-        /// Control Panel1.
+        /// Control Image2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel1;
+        protected global::System.Web.UI.WebControls.Image Image2;
+        
+        /// <summary>
+        /// Control Image3.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image3;
+        
+        /// <summary>
+        /// Control Label10.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label10;
         
         /// <summary>
         /// Control Label5.
@@ -103,6 +130,15 @@ namespace WebApp.formulario {
         protected global::System.Web.UI.WebControls.DropDownList cboMotivoVisitaND;
         
         /// <summary>
+        /// Control Image4.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image4;
+        
+        /// <summary>
         /// Control Label8.
         /// </summary>
         /// <remarks>
@@ -137,6 +173,15 @@ namespace WebApp.formulario {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtNotasND;
+        
+        /// <summary>
+        /// Control Panel1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Panel1;
         
         /// <summary>
         /// Control btnGuardarNDiag.
