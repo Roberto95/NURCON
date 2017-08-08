@@ -38,6 +38,16 @@ namespace WebApp
             Response.Redirect("Telefonos.aspx", true);
 
         }
+
+        protected void btnHistorial_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Historialdiagnostico.aspx", true);
+        }
+
+        protected void btnNuevoDiagnostico_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("NuevoDiagnostico.aspx", true);
+        }
     }
 
     }

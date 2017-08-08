@@ -35,7 +35,7 @@
                 <td class="auto-style4">
             <asp:Label ID="Label1" runat="server" Text="Buscar por ID" Font-Names="Berlin Sans FB"></asp:Label>
                     <br />
-                    <asp:TextBox ID="txtBuscarID" runat="server" OnTextChanged="txtBuscarID_TextChanged" Width="105px" Font-Names="Berlin Sans FB" ForeColor="#666666"></asp:TextBox>
+                    <asp:TextBox ID="txtBuscarID" runat="server" Width="105px" Font-Names="Berlin Sans FB" ForeColor="#666666"></asp:TextBox>
                     <asp:Button ID="btnBuscarModificar" runat="server" Text="Buscar" Width="75px" Height="35px" OnClick="btnBuscarModificar_Click" Font-Names="Berlin Sans FB Demi" />
                 </td>
                 <td class="auto-style5">

@@ -57,7 +57,6 @@
              <tr>
                  <td class="auto-style3">
                      <br />
-                     <br />
                      <asp:Button ID="Button1" runat="server" Text="Nuevo Paciente / Control de diagnósticos" Width="248px" Height="87px" OnClick="Button1_Click" Font-Names="Berlin Sans FB" />
                 
                       <br />
@@ -66,6 +65,10 @@
                            <asp:Button ID="Button3" runat="server" Text="Eliminar paciente" Width="251px" Height="74px" OnClick="Button3_Click" Font-Names="Berlin Sans FB" />
                 
                       <br />
+                     <br />
+                     
+                      <asp:Button ID="Button4" runat="server" Text="Telefonos de Emergencias" Height="83px" Width="249px" CssClass="auto-style2" OnClick="Button4_Click" Font-Names="Berlin Sans FB" />
+                     
                      <br />
                      
                </td>
@@ -84,7 +87,10 @@
                            <br />
                      <br />
                 
-                      <asp:Button ID="Button4" runat="server" Text="Telefonos de Emergencias" Height="75px" Width="229px" CssClass="auto-style2" OnClick="Button4_Click" Font-Names="Berlin Sans FB" />
+                      <asp:Button ID="btnHistorial" runat="server" Font-Names="Berlin Sans FB" Height="82px" OnClick="btnHistorial_Click" Text="Historial de Diagnosticos" Width="229px" />
+                      <br />
+                      <br />
+                      <asp:Button ID="btnNuevoDiagnostico" runat="server" Font-Names="Berlin Sans FB" Height="80px" OnClick="btnNuevoDiagnostico_Click" Text="Nuevo Diagnostico" Width="229px" />
                      
                  </td>
 
@@ -112,9 +118,7 @@
     
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                      
-                      <asp:Button ID="Button5" runat="server" Text="Salir" Height="32px" Width="106px" Font-Names="Berlin Sans FB" />
-    
-    </div>
+                      </div>
     </form>
 </body>
 </html>
