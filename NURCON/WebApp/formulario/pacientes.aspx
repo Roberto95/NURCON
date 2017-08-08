@@ -137,6 +137,9 @@
              
              <asp:Button ID="btnGuardar" runat="server" Text="Guardar" Height="40px" Width="157px" OnClick="btnGuardar_Click" Font-Names="Berlin Sans FB Demi" />
              
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <asp:Button ID="btnRegresar" runat="server" Font-Names="Berlin Sans FB Demi" Height="39px" OnClick="Button1_Click" Text="Regresar a Inicio" Width="155px" />
+             
     </form>
 </body>
 </html>

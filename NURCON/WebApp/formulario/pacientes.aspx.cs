@@ -79,5 +79,10 @@ namespace WebApp
                 //MessageBox.Show("Verificar que los campos no estén vacíos o estén en el formato correcto.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("inicio.aspx");
+        }
     }
 }

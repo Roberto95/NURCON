@@ -53,6 +53,9 @@
             <td class="auto-style1">
                 <center> &nbsp;&nbsp; <br>
                 <asp:GridView ID="dgvVisualizar" runat="server" Width="516px"></asp:GridView>
+                    <br />
+                    <br />
+                    <asp:Button ID="btnRegresar" runat="server" Font-Names="Berlin Sans FB Demi" OnClick="Button1_Click" Text="Regresar a Inicio" />
             </tr>
         </tr>
     </table>

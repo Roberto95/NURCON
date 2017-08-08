@@ -41,6 +41,11 @@ namespace WebApp.formulario
             dgvVisualizar.DataBind();
             //dgvVisualizar.Columns["PacienteId"].Visible = true;
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("inicio.aspx");
+        }
     }
 }
 
